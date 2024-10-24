@@ -5,7 +5,7 @@
 //  Created by Virgi Septian on 23/10/24.
 //
 
-import Foundation
+import SwiftUI
 
 struct DailyScrum {
     var title: String
