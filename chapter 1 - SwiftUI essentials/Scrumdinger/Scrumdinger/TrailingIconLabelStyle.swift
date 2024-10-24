@@ -4,6 +4,7 @@
 //
 //  Created by Virgi Septian on 24/10/24.
 //
+
 //  The goal is to create a label with an icon placed to the right (trailing) of its text. By default, in SwiftUI, the icon on a Label is usually placed to the left of the text, but with this custom style, we can change that.
 
 import SwiftUI
