@@ -16,10 +16,15 @@ struct DetailView: View {
     var body: some View {
         List {
             Section(header: Text("Meeting Info")) {
-                NavigationLink(destination: MeetingView()){
+                NavigationLink(destination: MeetingView(scrum: $scrum)){
                     Label("start meeting", systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)
+                }
+                HStack {
+                    Label("Length", systemImage: "clock")
+                    Spacer()
+                    Text("\(scrum.lengthInMinutes) minutes")
                 }
                 HStack {
                     Label("Theme", systemImage: "paintpalette")
