@@ -15,7 +15,9 @@ struct MeetingView: View {
             RoundedRectangle(cornerRadius: 16.0)
                 .fill(scrum.theme.mainColor)
             VStack {
-                MeetingHeaderView(secondElapsed: scrumTimer.secondsElapsed, secondRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
+                MeetingHeaderView(secondElapsed: scrumTimer.secondsElapsed,
+                                  secondRemaining: scrumTimer.secondsRemaining,
+                                  theme: scrum.theme)
                 Circle()
                     .strokeBorder(lineWidth: 24)
                 HStack{
@@ -30,10 +32,19 @@ struct MeetingView: View {
         }
         .padding()
         .foregroundColor(scrum.theme.accentColor)
+        .onAppear {
+            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+            scrumTimer.startScrum()
+        }
+        .onDisappear {
+            scrumTimer.stopScrum()
+        }
         .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-#Preview {
-    MeetingView(scrum: .constant(DailyScrum.sampleData[0]))
+struct MeetingView_Previews: PreviewProvider {
+    static var previews: some View {
+        MeetingView(scrum: .constant(DailyScrum.sampleData[0]))
+    }
 }
