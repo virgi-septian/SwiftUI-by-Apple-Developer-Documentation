@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DailyScrum: Identifiable {
+struct DailyScrum: Identifiable, Codable {
     var id: UUID
 
     var title: String
@@ -36,7 +36,7 @@ struct DailyScrum: Identifiable {
 }
 
 extension DailyScrum {
-    struct Attendee: Identifiable {
+    struct Attendee: Identifiable, Codable {
         var id: UUID
         var name: String
         
