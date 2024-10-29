@@ -76,5 +76,4 @@ struct DetailView: View {
     NavigationStack{
         DetailView(scrum: .constant(DailyScrum.sampleData[0]))
     }
-    
 }
