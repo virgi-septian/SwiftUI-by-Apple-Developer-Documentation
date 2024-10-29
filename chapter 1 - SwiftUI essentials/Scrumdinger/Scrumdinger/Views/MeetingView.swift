@@ -14,16 +14,16 @@ struct MeetingView: View {
     
     private var player: AVPlayer { AVPlayer.sharedDingPlayer }
     
-    fileprivate func startScrum() {
+    private func startScrum() {
         scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
-        scrumTimer.startScrum()
         scrumTimer.speakerChangedAction = {
             player.seek(to: .zero)
             player.play()
         }
+        scrumTimer.startScrum()
     }
     
-    fileprivate func endScrum() {
+    private func endScrum() {
         scrumTimer.stopScrum()
         let newHistory = History(attendees: scrum.attendees)
         scrum.history.insert(newHistory, at: 0)

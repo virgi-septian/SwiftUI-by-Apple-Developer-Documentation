@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1AE4BD072CD141D400E067E5 /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1AE4BD052CD141D400E067E5 /* SampleCode.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		1AFB7F972CC8DE53005A0F94 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE4BD052CD141D400E067E5 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
+		1AE4BD082CD145AE00E067E5 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -29,20 +34,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AE4BD062CD141D400E067E5 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				1AE4BD052CD141D400E067E5 /* SampleCode.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		1AFB7F8E2CC8DE53005A0F94 = {
 			isa = PBXGroup;
 			children = (
 				1AFB7F992CC8DE53005A0F94 /* Scrumdinger */,
-				1AFB7F982CC8DE53005A0F94 /* Products */,
+				1AE4BD062CD141D400E067E5 /* Configuration */,
+				1AE4BD082CD145AE00E067E5 /* Scrumdinger.app */,
 			);
-			sourceTree = "<group>";
-		};
-		1AFB7F982CC8DE53005A0F94 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1AFB7F972CC8DE53005A0F94 /* Scrumdinger.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,7 +73,7 @@
 			packageProductDependencies = (
 			);
 			productName = Scrumdinger;
-			productReference = 1AFB7F972CC8DE53005A0F94 /* Scrumdinger.app */;
+			productReference = 1AE4BD082CD145AE00E067E5 /* Scrumdinger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +101,7 @@
 			mainGroup = 1AFB7F8E2CC8DE53005A0F94;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1AFB7F982CC8DE53005A0F94 /* Products */;
+			productRefGroup = 1AFB7F8E2CC8DE53005A0F94;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE4BD072CD141D400E067E5 /* SampleCode.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +267,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,6 +297,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
