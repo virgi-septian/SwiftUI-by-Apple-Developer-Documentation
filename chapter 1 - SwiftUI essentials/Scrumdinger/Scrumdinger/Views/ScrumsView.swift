@@ -14,23 +14,50 @@ struct ScrumsView: View {
     let saveAction: ()->Void
 
     var body: some View {
-        NavigationStack {
-            List($scrums) { $scrum in
-                NavigationLink(destination: DetailView(scrum: $scrum)) {
-                    CardView(scrum: scrum)
+        Group {
+            if #available(iOS 16.0, *) {
+                NavigationStack {
+                    List($scrums) { $scrum in
+                        NavigationLink(destination: DetailView(scrum: $scrum)) {
+                            CardView(scrum: scrum)
+                        }
+                        .listRowBackground(scrum.theme.mainColor)
+                    }
+                    .navigationTitle("Daily Scrums")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {
+                                isPresentingNewScrumView = true
+                            }) {
+                                Image(systemName: "plus")
+                            }
+                            .accessibilityLabel("New Scrum")
+                        }
+                    }
                 }
-                .listRowBackground(scrum.theme.mainColor)
-            }
-            .navigationTitle("Daily Scrums")
-            .toolbar {
-                Button(action: {
-                    isPresentingNewScrumView = true
-                }) {
-                    Image(systemName: "plus")
+            } else {
+                NavigationView {
+                    List($scrums) { $scrum in
+                        NavigationLink(destination: DetailView(scrum: $scrum)) {
+                            CardView(scrum: scrum)
+                        }
+                        .listRowBackground(scrum.theme.mainColor)
+                    }
+                    .navigationTitle("Daily Scrums")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {
+                                isPresentingNewScrumView = true
+                            }) {
+                                Image(systemName: "plus")
+                            }
+                            .accessibilityLabel("New Scrum")
+                        }
+                    }
                 }
-                .accessibilityLabel("New Scrum")
             }
         }
+        
         .sheet(isPresented: $isPresentingNewScrumView) {
             NewScrumSheet(scrums: $scrums, isPresentingNewScrumView: $isPresentingNewScrumView)
         }

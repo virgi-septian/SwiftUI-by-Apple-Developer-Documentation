@@ -65,29 +65,58 @@ struct DetailView: View {
             }
         }
         .sheet(isPresented: $isPresentingEditView){
-            NavigationStack {
-                DetailEditView(scrum: $editingScrum)
-                    .navigationTitle(scrum.title)
-                    .toolbar {
-                        ToolbarItem(placement: .cancellationAction) {
-                            Button("Cancelled") {
-                                isPresentingEditView = false
+            if #available(iOS 16.0, *) {
+                NavigationStack {
+                    DetailEditView(scrum: $editingScrum)
+                        .navigationTitle(scrum.title)
+                        .toolbar {
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("Cancelled") {
+                                    isPresentingEditView = false
+                                }
+                            }
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button("Done") {
+                                    isPresentingEditView = false
+                                    scrum = editingScrum
+                                }
                             }
                         }
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Done") {
-                                isPresentingEditView = false
-                                scrum = editingScrum
+                }
+            } else {
+                NavigationView {
+                    DetailEditView(scrum: $editingScrum)
+                        .navigationTitle(scrum.title)
+                        .toolbar {
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("Cancelled") {
+                                    isPresentingEditView = false
+                                }
+                            }
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button("Done") {
+                                    isPresentingEditView = false
+                                    scrum = editingScrum
+                                }
                             }
                         }
-                    }
+                }
             }
+            
         }
     }
 }
 
 #Preview {
-    NavigationStack{
-        DetailView(scrum: .constant(DailyScrum.sampleData[0]))
+    if #available(iOS 16.0, *) {
+        NavigationStack {
+            DetailView(scrum: .constant(DailyScrum.sampleData[0]))
+                .navigationTitle("Daily Scrum")
+        }
+    } else {
+        NavigationView {
+            DetailView(scrum: .constant(DailyScrum.sampleData[0]))
+                .navigationTitle("Daily Scrum")
+        }
     }
 }

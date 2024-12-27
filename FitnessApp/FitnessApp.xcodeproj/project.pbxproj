@@ -6,25 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		1AE4BD072CD141D400E067E5 /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1AE4BD052CD141D400E067E5 /* SampleCode.xcconfig */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		1AE4BD052CD141D400E067E5 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
-		1AE4BD082CD145AE00E067E5 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A524CA32D1AB63F0053855E /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1AFB7F992CC8DE53005A0F94 /* Scrumdinger */ = {
+		1A524CA52D1AB63F0053855E /* FitnessApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Scrumdinger;
+			path = FitnessApp;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AFB7F942CC8DE53005A0F94 /* Frameworks */ = {
+		1A524CA02D1AB63F0053855E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,95 +29,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AE4BD062CD141D400E067E5 /* Configuration */ = {
+		1A524C9A2D1AB63F0053855E = {
 			isa = PBXGroup;
 			children = (
-				1AE4BD052CD141D400E067E5 /* SampleCode.xcconfig */,
+				1A524CA52D1AB63F0053855E /* FitnessApp */,
+				1A524CA42D1AB63F0053855E /* Products */,
 			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
-		1AFB7F8E2CC8DE53005A0F94 = {
+		1A524CA42D1AB63F0053855E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AFB7F992CC8DE53005A0F94 /* Scrumdinger */,
-				1AE4BD062CD141D400E067E5 /* Configuration */,
-				1AE4BD082CD145AE00E067E5 /* Scrumdinger.app */,
+				1A524CA32D1AB63F0053855E /* FitnessApp.app */,
 			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1AFB7F962CC8DE53005A0F94 /* Scrumdinger */ = {
+		1A524CA22D1AB63F0053855E /* FitnessApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AFB7FA52CC8DE55005A0F94 /* Build configuration list for PBXNativeTarget "Scrumdinger" */;
+			buildConfigurationList = 1A524CB62D1AB6400053855E /* Build configuration list for PBXNativeTarget "FitnessApp" */;
 			buildPhases = (
-				1AFB7F932CC8DE53005A0F94 /* Sources */,
-				1AFB7F942CC8DE53005A0F94 /* Frameworks */,
-				1AFB7F952CC8DE53005A0F94 /* Resources */,
+				1A524C9F2D1AB63F0053855E /* Sources */,
+				1A524CA02D1AB63F0053855E /* Frameworks */,
+				1A524CA12D1AB63F0053855E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1AFB7F992CC8DE53005A0F94 /* Scrumdinger */,
+				1A524CA52D1AB63F0053855E /* FitnessApp */,
 			);
-			name = Scrumdinger;
+			name = FitnessApp;
 			packageProductDependencies = (
 			);
-			productName = Scrumdinger;
-			productReference = 1AE4BD082CD145AE00E067E5 /* Scrumdinger.app */;
+			productName = FitnessApp;
+			productReference = 1A524CA32D1AB63F0053855E /* FitnessApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1AFB7F8F2CC8DE53005A0F94 /* Project object */ = {
+		1A524C9B2D1AB63F0053855E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					1AFB7F962CC8DE53005A0F94 = {
-						CreatedOnToolsVersion = 16.0;
+					1A524CA22D1AB63F0053855E = {
+						CreatedOnToolsVersion = 16.1;
 					};
 				};
 			};
-			buildConfigurationList = 1AFB7F922CC8DE53005A0F94 /* Build configuration list for PBXProject "Scrumdinger" */;
+			buildConfigurationList = 1A524C9E2D1AB63F0053855E /* Build configuration list for PBXProject "FitnessApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 1AFB7F8E2CC8DE53005A0F94;
+			mainGroup = 1A524C9A2D1AB63F0053855E;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1AFB7F8E2CC8DE53005A0F94;
+			productRefGroup = 1A524CA42D1AB63F0053855E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1AFB7F962CC8DE53005A0F94 /* Scrumdinger */,
+				1A524CA22D1AB63F0053855E /* FitnessApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1AFB7F952CC8DE53005A0F94 /* Resources */ = {
+		1A524CA12D1AB63F0053855E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE4BD072CD141D400E067E5 /* SampleCode.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1AFB7F932CC8DE53005A0F94 /* Sources */ = {
+		1A524C9F2D1AB63F0053855E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1AFB7FA32CC8DE55005A0F94 /* Debug */ = {
+		1A524CB42D1AB6400053855E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -184,7 +177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -195,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		1AFB7FA42CC8DE55005A0F94 /* Release */ = {
+		1A524CB52D1AB6400053855E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -251,32 +244,28 @@
 			};
 			name = Release;
 		};
-		1AFB7FA62CC8DE55005A0F94 /* Debug */ = {
+		1A524CB72D1AB6400053855E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Q73FTA466A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.Scrumdinger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.FitnessApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -284,31 +273,28 @@
 			};
 			name = Debug;
 		};
-		1AFB7FA72CC8DE55005A0F94 /* Release */ = {
+		1A524CB82D1AB6400053855E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FitnessApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Q73FTA466A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.Scrumdinger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.FitnessApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,25 +305,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AFB7F922CC8DE53005A0F94 /* Build configuration list for PBXProject "Scrumdinger" */ = {
+		1A524C9E2D1AB63F0053855E /* Build configuration list for PBXProject "FitnessApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AFB7FA32CC8DE55005A0F94 /* Debug */,
-				1AFB7FA42CC8DE55005A0F94 /* Release */,
+				1A524CB42D1AB6400053855E /* Debug */,
+				1A524CB52D1AB6400053855E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AFB7FA52CC8DE55005A0F94 /* Build configuration list for PBXNativeTarget "Scrumdinger" */ = {
+		1A524CB62D1AB6400053855E /* Build configuration list for PBXNativeTarget "FitnessApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1AFB7FA62CC8DE55005A0F94 /* Debug */,
-				1AFB7FA72CC8DE55005A0F94 /* Release */,
+				1A524CB72D1AB6400053855E /* Debug */,
+				1A524CB82D1AB6400053855E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1AFB7F8F2CC8DE53005A0F94 /* Project object */;
+	rootObject = 1A524C9B2D1AB63F0053855E /* Project object */;
 }

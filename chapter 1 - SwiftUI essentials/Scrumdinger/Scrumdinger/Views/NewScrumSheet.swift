@@ -13,22 +13,42 @@ struct NewScrumSheet: View {
     @Binding var isPresentingNewScrumView: Bool
     
     var body: some View {
-        NavigationStack {
-            DetailEditView(scrum: $newScrum)
-                .toolbar {
-                    ToolbarItem(placement: .cancellationAction) {
-                        Button("Dismiss") {
-                            isPresentingNewScrumView = false
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                DetailEditView(scrum: $newScrum)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Dismiss") {
+                                isPresentingNewScrumView = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Add") {
+                                scrums.append(newScrum)
+                                isPresentingNewScrumView = false
+                            }
                         }
                     }
-                    ToolbarItem(placement: .confirmationAction) {
-                        Button("Add") {
-                            scrums.append(newScrum)
-                            isPresentingNewScrumView = false
+            }
+        } else {
+            NavigationView {
+                DetailEditView(scrum: $newScrum)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Dismiss") {
+                                isPresentingNewScrumView = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Add") {
+                                scrums.append(newScrum)
+                                isPresentingNewScrumView = false
+                            }
                         }
                     }
-                }
+            }
         }
+        
     }
 }
 
