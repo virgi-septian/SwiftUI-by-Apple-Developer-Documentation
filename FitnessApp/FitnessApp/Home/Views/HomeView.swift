@@ -82,9 +82,11 @@ struct HomeView: View {
                         
                     }
                     
-                    LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2)) {
-                        ForEach(viewModel.mockActivities, id: \.id) { activity in
-                            ActivityCard(activity: activity)
+                    if !viewModel.activities.isEmpty {
+                        LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2)) {
+                            ForEach(viewModel.activities, id: \.id) { activity in
+                                ActivityCard(activity: activity)
+                            }
                         }
                     }
                     
