@@ -30,3 +30,9 @@ struct ItemRow: View {
         }
     }
 }
+
+
+#Preview {
+    let sampleItem = MenuItem(id: UUID(uuidString: "E13E2B1D-1FA1-4B9A-9A99-2F9A5D939AE2")!,name: "Test Item", photoCredit: "", price: 2, restrictions: ["D", "G"], description: "tes")
+    ItemRow(item: sampleItem)
+}
