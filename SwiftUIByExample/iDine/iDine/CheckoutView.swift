@@ -18,6 +18,8 @@ struct CheckoutView: View {
     
     @State private var tipAmount = 15
     let tipAmounts = [10, 15, 20, 25, 0]
+
+    @State private var showingPaymentAlert = false
     
     var totalPrice: String {
         let total = Double(order.total)
@@ -52,12 +54,17 @@ struct CheckoutView: View {
             
             Section("Total: \(totalPrice)") {
                 Button("Confirm Order") {
-                    
+                    showingPaymentAlert.toggle()
                 }
             }
         }
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
+        .alert("Order Confirmed", isPresented: $showingPaymentAlert) {
+            //
+        } message: {
+            Text("Your total was \(totalPrice) - Thank You!")
+        }
         
         Spacer()
     }
