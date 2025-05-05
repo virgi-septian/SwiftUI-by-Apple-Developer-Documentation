@@ -8,16 +8,26 @@
 import SwiftUI
 
 struct CheckoutView: View {
+    @EnvironmentObject var order: Order
+    
     @State private var addLoyaltyDetail = false
     @State private var loyaltyNumber = ""
+    
     @State private var paymentType = "Cash"
-    @EnvironmentObject var order: Order
     let paymentTypes = ["Cash", "Transfer Bank", "iDhinePoints"]
+    
+    @State private var tipAmount = 15
     let tipAmounts = [10, 15, 20, 25, 0]
-    @State private var tipAmount = 10
+    
+    var totalPrice: String {
+        let total = Double(order.total)
+        let tipValue = total / 100 * Double(tipAmount)
+        return (total + tipValue).formatted(.currency(code: "USD"))
+    }
+    
     var body: some View {
-        VStack {
-            Section {
+        Form {
+            Section{
                 Picker("How do you want to pay?", selection: $paymentType) {
                     ForEach(paymentTypes, id: \.self) {
                         Text($0)
@@ -29,7 +39,6 @@ struct CheckoutView: View {
                 if addLoyaltyDetail {
                     TextField("Enter your iDhine ID", text: $loyaltyNumber)
                 }
-        
             }
             
             Section("Add a tip ?") {
@@ -41,14 +50,16 @@ struct CheckoutView: View {
                 .pickerStyle(.segmented)
             }
             
-            Section("Total: $100") {
+            Section("Total: \(totalPrice)") {
                 Button("Confirm Order") {
                     
                 }
             }
         }
-        .navigationTitle(Text("Payment"))
+        .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
+        
+        Spacer()
     }
 }
 
