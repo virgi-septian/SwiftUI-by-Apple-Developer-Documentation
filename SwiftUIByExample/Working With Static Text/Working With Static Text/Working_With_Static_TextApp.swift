@@ -12,7 +12,8 @@ struct Working_With_Static_TextApp: App {
     var body: some Scene {
         WindowGroup {
 //            StaticLabelWithATextView()
-            StyleTextViews()
+//            StyleTextViews()
+            AdvancedTextStyling()
         }
     }
 }
