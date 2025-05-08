@@ -13,7 +13,8 @@ struct Working_With_Static_TextApp: App {
         WindowGroup {
 //            StaticLabelWithATextView()
 //            StyleTextViews()
-            AdvancedTextStyling()
+//            AdvancedTextStyling()
+            MultilineTextAlignment()
         }
     }
 }
