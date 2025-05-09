@@ -15,7 +15,8 @@ struct Working_With_Static_TextApp: App {
 //            StyleTextViews()
 //            AdvancedTextStyling()
 //            MultilineTextAlignment()
-            FormatTextInsideView()
+//            FormatTextInsideView()
+            SpacingBetweenLetters()
         }
     }
 }
