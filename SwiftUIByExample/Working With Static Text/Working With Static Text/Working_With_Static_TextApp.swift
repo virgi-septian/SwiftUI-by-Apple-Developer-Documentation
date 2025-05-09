@@ -14,7 +14,8 @@ struct Working_With_Static_TextApp: App {
 //            StaticLabelWithATextView()
 //            StyleTextViews()
 //            AdvancedTextStyling()
-            MultilineTextAlignment()
+//            MultilineTextAlignment()
+            FormatTextInsideView()
         }
     }
 }

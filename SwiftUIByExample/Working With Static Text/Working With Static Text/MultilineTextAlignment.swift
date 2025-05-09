@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct MultilineTextAlignment: View {
-    @State private var position: TextAlignment = .center
-    let positions: [TextAlignment] = [.center, .leading, .trailing]
+    @State private var aligment: TextAlignment = .center
+    let aligments: [TextAlignment] = [.center, .leading, .trailing]
     var body: some View {
-        Picker("Select position", selection: $position) {
-            ForEach(positions, id: \.self ) { position in
-                Text(String(describing: position))
+        Picker("Select position", selection: $aligment) {
+            ForEach(aligments, id: \.self ) { aligment in
+                Text(String(describing: aligment))
             }
         }
         
         Text("This is an extremely long text string that will never fit even the widest of phones without wrapping")
-            .multilineTextAlignment(position)
+            .multilineTextAlignment(aligment)
     }
 }
 
