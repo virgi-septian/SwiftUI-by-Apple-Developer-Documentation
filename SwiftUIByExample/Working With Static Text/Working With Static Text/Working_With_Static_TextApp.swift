@@ -21,7 +21,8 @@ struct Working_With_Static_TextApp: App {
 //            MarkContentUsingRedacted()
 //            MarkContentUsingPrivacySensitive()
 //            MarkDownInText()
-            CustomizeTheWayLinkAreOpenend()
+//            CustomizeTheWayLinkAreOpenend()
+            LetUserSelectText()
         }
     }
 }
