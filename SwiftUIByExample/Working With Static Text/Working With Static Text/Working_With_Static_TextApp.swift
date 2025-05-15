@@ -19,7 +19,8 @@ struct Working_With_Static_TextApp: App {
 //            SpacingBetweenLetters()
 //            ShowTextIconSideBySideUsingLabel()
 //            MarkContentUsingRedacted()
-            MarkContentUsingPrivacySensitive()
+//            MarkContentUsingPrivacySensitive()
+            MarkDownInText()
         }
     }
 }
