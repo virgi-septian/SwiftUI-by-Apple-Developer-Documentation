@@ -17,7 +17,8 @@ struct Working_With_Static_TextApp: App {
 //            MultilineTextAlignment()
 //            FormatTextInsideView()
 //            SpacingBetweenLetters()
-            ShowTextIconSideBySideUsingLabel()
+//            ShowTextIconSideBySideUsingLabel()
+            MarkContentUsingRedacted()
         }
     }
 }

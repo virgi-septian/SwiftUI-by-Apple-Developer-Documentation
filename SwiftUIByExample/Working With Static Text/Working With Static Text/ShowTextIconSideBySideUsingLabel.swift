@@ -53,6 +53,10 @@ struct ShowTextIconSideBySideUsingLabel: View {
                         .frame(width: 64, height: 64)
                 }
             }
+            
+            Section {
+                
+            }
         }
     }
 }
