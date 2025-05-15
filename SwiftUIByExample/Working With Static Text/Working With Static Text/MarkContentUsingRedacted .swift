@@ -28,11 +28,11 @@ struct MarkContentUsingRedacted: View {
             
             Section {
                 if redactionReasons == .placeholder {
-                   Text("Loading…")
-               } else {
+                    Text(bio)
+                } else {
                    Text(bio)
-                       .redacted(reason: redactionReasons)
-               }
+                        .redacted(reason: redactionReasons)
+                }
             }
         }
         
@@ -41,4 +41,5 @@ struct MarkContentUsingRedacted: View {
 
 #Preview {
     MarkContentUsingRedacted()
+        .redacted(reason: .placeholder)
 }

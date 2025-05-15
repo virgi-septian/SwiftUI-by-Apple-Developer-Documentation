@@ -18,7 +18,8 @@ struct Working_With_Static_TextApp: App {
 //            FormatTextInsideView()
 //            SpacingBetweenLetters()
 //            ShowTextIconSideBySideUsingLabel()
-            MarkContentUsingRedacted()
+//            MarkContentUsingRedacted()
+            MarkContentUsingPrivacySensitive()
         }
     }
 }
