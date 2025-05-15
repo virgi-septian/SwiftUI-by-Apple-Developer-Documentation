@@ -20,7 +20,8 @@ struct Working_With_Static_TextApp: App {
 //            ShowTextIconSideBySideUsingLabel()
 //            MarkContentUsingRedacted()
 //            MarkContentUsingPrivacySensitive()
-            MarkDownInText()
+//            MarkDownInText()
+            CustomizeTheWayLinkAreOpenend()
         }
     }
 }
