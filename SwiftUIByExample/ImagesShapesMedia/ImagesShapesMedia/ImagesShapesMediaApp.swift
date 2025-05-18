@@ -11,7 +11,8 @@ import SwiftUI
 struct ImagesShapesMediaApp: App {
     var body: some Scene {
         WindowGroup {
-            DrawImagesUsingImageViews()
+//            DrawImagesUsingImageViews()
+            AdjustTheWayAnImage()
         }
     }
 }
