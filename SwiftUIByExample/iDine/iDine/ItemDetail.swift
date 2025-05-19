@@ -26,7 +26,7 @@ struct ItemDetail: View {
             Text(item.description)
                 .padding()
             Button("Order This") {
-                
+                order.add(item: item)
             }
             .buttonStyle(.borderedProminent)
 
