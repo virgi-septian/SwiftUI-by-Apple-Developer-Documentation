@@ -12,7 +12,8 @@ struct ImagesShapesMediaApp: App {
     var body: some Scene {
         WindowGroup {
 //            DrawImagesUsingImageViews()
-            AdjustTheWayAnImage()
+//            AdjustTheWayAnImage()
+            TileAnImage()
         }
     }
 }

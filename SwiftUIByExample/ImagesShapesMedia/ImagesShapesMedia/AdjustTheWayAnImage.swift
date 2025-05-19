@@ -11,15 +11,22 @@ struct AdjustTheWayAnImage: View {
     var body: some View {
         List {
             Section {
-                Image("rome")
+                Image("diamond")
                     .resizable()
                     .frame(height: 200)
             }
             
             Section {
-                Image("rome")
+                Image("diamond")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .frame(width: 250)
+            }
+            
+            Section {
+                Image("diamond")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 250)
             }
         }
