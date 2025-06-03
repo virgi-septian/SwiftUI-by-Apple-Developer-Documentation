@@ -13,7 +13,8 @@ struct ImagesShapesMediaApp: App {
         WindowGroup {
 //            DrawImagesUsingImageViews()
 //            AdjustTheWayAnImage()
-            TileAnImage()
+//            TileAnImage()
+            RenderAGradient()
         }
     }
 }
