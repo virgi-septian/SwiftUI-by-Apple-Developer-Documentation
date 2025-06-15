@@ -14,7 +14,13 @@ struct ImagesShapesMediaApp: App {
 //            DrawImagesUsingImageViews()
 //            AdjustTheWayAnImage()
 //            TileAnImage()
-            RenderAGradient()
+//            RenderAGradient()
+//            ImagesAndOtherViewsAsABackgrounds()
+//            FillAndStrokeShapes()
+//            DrawPart()
+//            UseContainerRelativeShape()
+//            PlayMoviesWithVideoPlayer()
+            IntegrateSpriteKit()
         }
     }
 }
