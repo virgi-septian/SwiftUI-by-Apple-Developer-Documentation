@@ -21,7 +21,8 @@ struct ImagesShapesMediaApp: App {
 //            UseContainerRelativeShape()
 //            PlayMoviesWithVideoPlayer()
 //            IntegrateSpriteKit()
-            LoadARemoteImage()
+//            LoadARemoteImage()
+            ColorOpacityInSFSymbols()
         }
     }
 }
