@@ -20,7 +20,8 @@ struct ImagesShapesMediaApp: App {
 //            DrawPart()
 //            UseContainerRelativeShape()
 //            PlayMoviesWithVideoPlayer()
-            IntegrateSpriteKit()
+//            IntegrateSpriteKit()
+            LoadARemoteImage()
         }
     }
 }
