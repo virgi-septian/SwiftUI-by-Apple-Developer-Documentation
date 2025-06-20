@@ -13,7 +13,16 @@ struct ImagesShapesMediaApp: App {
         WindowGroup {
 //            DrawImagesUsingImageViews()
 //            AdjustTheWayAnImage()
-            TileAnImage()
+//            TileAnImage()
+//            RenderAGradient()
+//            ImagesAndOtherViewsAsABackgrounds()
+//            FillAndStrokeShapes()
+//            DrawPart()
+//            UseContainerRelativeShape()
+//            PlayMoviesWithVideoPlayer()
+//            IntegrateSpriteKit()
+//            LoadARemoteImage()
+            ColorOpacityInSFSymbols()
         }
     }
 }
