@@ -12,9 +12,13 @@ struct InterestingUIApp: App {
     @StateObject private var containerData = ZoomContainerData()
     var body: some Scene {
         WindowGroup {
-            ZoomContainer {
-                PincToZoom()
-            }
+            //MARK: - Interisting UI
+//            ZoomContainer {
+//                PincToZoom()
+//            }
+            
+            //MARK: - Instagram Profile Scroll Tab View
+            ProfileScrollTabView()
         }
     }
 }
