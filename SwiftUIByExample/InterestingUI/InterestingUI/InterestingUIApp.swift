@@ -18,7 +18,9 @@ struct InterestingUIApp: App {
 //            }
             
             //MARK: - Instagram Profile Scroll Tab View
-            ProfileScrollTabView()
+//            ProfileScrollTabView()
+            
+            ContentRestrictedTextField()
         }
     }
 }

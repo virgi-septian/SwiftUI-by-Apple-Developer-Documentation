@@ -8,12 +8,20 @@
 import SwiftUI
 
 struct ProfileScrollTabView: View {
+    @State private var searchText = ""
     var body: some View {
         HeaderPageScrollTabView(displaysSymbols: false) {
+            HStack {
+                TextField("Search", text: $searchText)
+                    .padding(10)
+                    .background(Color(.systemGray6))
+                    .cornerRadius(8)
+            }
+            .padding(.horizontal)
             RoundedRectangle(cornerRadius: 30)
                 .fill(.blue.gradient)
                 .frame(height: 350)
-                .padding(15)
+                .padding(.horizontal, 15)
         } labels: {
             PageLabel(title: "Posts", symbolImage: "square.grid.3x3.fill")
             PageLabel(title: "Reels", symbolImage: "photo.stack.fill")
@@ -43,6 +51,45 @@ struct ProfileScrollTabView: View {
 
 }
 
+
+
+struct InstagramLikeView: View {
+    @State private var searchText = ""
+    @State private var items = Array(0..<20)
+
+    var body: some View {
+        ScrollView {
+            LazyVStack(spacing: 16) {
+                
+                // 🔍 Search Bar (ikut discroll)
+                HStack {
+                    TextField("Search", text: $searchText)
+                        .padding(10)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                }
+                .padding(.horizontal)
+                .padding(.top)
+
+                // 🧱 Dummy Content
+                ForEach(items, id: \.self) { index in
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Color.blue.opacity(0.3))
+                        .frame(height: 60)
+                        .overlay(Text("Item \(index)"))
+                        .padding(.horizontal)
+                }
+            }
+            .padding(.bottom)
+        }
+        .refreshable {
+            // ⏳ Loading muncul di bawah Search
+            try? await Task.sleep(for: .seconds(5))
+            items.shuffle()
+        }
+    }
+}
+
 #Preview {
-    ProfileScrollTabView()
+    InstagramLikeView()
 }
