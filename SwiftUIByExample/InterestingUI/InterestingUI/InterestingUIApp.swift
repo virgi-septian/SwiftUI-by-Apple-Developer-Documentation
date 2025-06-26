@@ -22,7 +22,9 @@ struct InterestingUIApp: App {
             
 //            ContentRestrictedTextField()
             
-            ContentPullToSearch()
+//            ContentPullToSearch()
+            
+            ContentResizableHeaderScrollView()
         }
     }
 }
