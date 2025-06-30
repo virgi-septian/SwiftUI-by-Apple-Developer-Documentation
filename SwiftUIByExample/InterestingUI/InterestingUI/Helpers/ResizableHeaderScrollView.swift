@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ResizableHeaderScrollView<Header: View, StickyHeader: View, Background: View, Content: View>: View {
-    var spacing: CGFloat = 10
+    var spacing: CGFloat = 5
     @ViewBuilder var header: Header
     @ViewBuilder var stickyHeader: StickyHeader
     /// Only for header background not for the entire view
@@ -29,20 +29,32 @@ struct ResizableHeaderScrollView<Header: View, StickyHeader: View, Background: V
             $0.contentOffset.y + $0.contentInsets.top
         }, action: { oldValue, newValue in
             scrollOffset = newValue
+            print("Scroll Offset: \(scrollOffset)")
         })
         .simultaneousGesture(
             DragGesture(minimumDistance: 10)
                 .onChanged({ value in
                     /// Adjusting the minimum distance value
                     /// Thus it starts from 0.
+                    print("Drag Offset: \(value.translation.height)")
+                    print("previousDragOffset: \(previousDragOffset)")
+                    
                     let dragOffset = value.translation.height
                     let deltaOffset = (dragOffset - previousDragOffset).rounded()
-
+                    
+                    print("Delta Offset: \(deltaOffset)")
+                    
                     previousDragOffset = dragOffset
-
+ 
                     // Scroll ke bawah → sembunyikan header
                     // Scroll ke atas → munculkan header
+                    print("Header Size: \(headerSize)")
+                    print("Header Offset: \(headerOffset)")
+                   
                     headerOffset = max(0, min(headerOffset - deltaOffset, headerSize))
+                    
+                    print("header offset: \(headerOffset)")
+                    
                 }).onEnded({ _ in
                     withAnimation(.easeInOut(duration: 0.2)) {
                         if headerOffset > (headerSize * 0.5) && scrollOffset > headerSize {
@@ -71,8 +83,6 @@ struct ResizableHeaderScrollView<Header: View, StickyHeader: View, Background: V
                     /// Optional (Spacing).
                     headerSize = newValue + spacing
                 }
-
-            stickyHeader
         }
         .offset(y: -headerOffset)
         .clipped()
@@ -80,6 +90,7 @@ struct ResizableHeaderScrollView<Header: View, StickyHeader: View, Background: V
             background
                 .ignoresSafeArea()
                 .offset(y: -headerOffset)
+                .padding(.bottom, -10)
         }
     }
 }
