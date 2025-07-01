@@ -57,13 +57,13 @@ struct ContentResizableHeaderScrollView: View {
                             .background {
                                 if selectedType == type {
                                     Capsule()
-                                        .fill(.blue.gradient)
+                                        .fill(.tint)
                                         .matchedGeometryEffect(id: "ACTIVETAB", in: animation)
                                 }
                             }
                             .contentShape(Rectangle())
                             .onTapGesture {
-                                withAnimation(.snappy) {
+                                withAnimation(.bouncy(duration: 0.5)) {
                                     selectedType = type
                                 }
                             }
@@ -76,7 +76,7 @@ struct ContentResizableHeaderScrollView: View {
             }, set: { _ in
 
             }), anchor: .center)
-            .safeAreaPadding(15)
+            .safeAreaPadding(10)
             .padding(.top, 10)
         } background: {
             Rectangle()
