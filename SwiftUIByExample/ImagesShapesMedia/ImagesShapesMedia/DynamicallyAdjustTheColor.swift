@@ -11,7 +11,7 @@ struct DynamicallyAdjustTheColor: View {
     @State private var value = 0.0
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            Text("How to dynamically adjust the color of an SF Symbol")
             
             List {
                 Section {
