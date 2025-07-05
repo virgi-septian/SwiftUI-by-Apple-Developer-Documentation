@@ -24,7 +24,8 @@ struct ImagesShapesMediaApp: App {
 //            LoadARemoteImage()
 //            ColorOpacityInSFSymbols()
 //            LetUsersSelectPictures()
-            LetUsersImportVideos()
+//            LetUsersImportVideos()
+            AnimateSFSymbols()
         }
     }
 }
