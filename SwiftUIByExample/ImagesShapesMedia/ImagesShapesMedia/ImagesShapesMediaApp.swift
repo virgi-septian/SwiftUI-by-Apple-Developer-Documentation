@@ -25,7 +25,8 @@ struct ImagesShapesMediaApp: App {
 //            ColorOpacityInSFSymbols()
 //            LetUsersSelectPictures()
 //            LetUsersImportVideos()
-            AnimateSFSymbols()
+//            AnimateSFSymbols()
+            ReadTheColorValuesFromaColor()
         }
     }
 }
