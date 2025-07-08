@@ -27,7 +27,8 @@ struct ImagesShapesMediaApp: App {
 //            LetUsersImportVideos()
 //            AnimateSFSymbols()
 //            ReadTheColorValuesFromaColor()
-            CombineShapes()
+//            CombineShapes()
+            CreateaMeshGradient()
         }
     }
 }
