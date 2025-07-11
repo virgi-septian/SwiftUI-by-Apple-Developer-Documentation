@@ -31,7 +31,7 @@ struct GiveCustomFrame: View {
         //            }
         //        }
         
-        ZStack {            
+        ZStack {
             Text("Please log in")
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .font(.largeTitle)

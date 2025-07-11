@@ -11,7 +11,8 @@ import SwiftUI
 struct ViewLayoutApp: App {
     var body: some Scene {
         WindowGroup {
-            GiveCustomFrame()
+//            GiveCustomFrame()
+            ControlSpacing()
         }
     }
 }
