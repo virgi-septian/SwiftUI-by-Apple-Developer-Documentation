@@ -24,7 +24,8 @@ struct InterestingUIApp: App {
             
 //            ContentPullToSearch()
             
-            ContentResizableHeaderScrollView()
+//            ContentResizableHeaderScrollView()
+            ContentSkeletonView()
         }
     }
 }
