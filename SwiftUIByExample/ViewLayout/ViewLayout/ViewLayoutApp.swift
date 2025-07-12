@@ -13,7 +13,8 @@ struct ViewLayoutApp: App {
         WindowGroup {
 //            GiveCustomFrame()
 //            ControlSpacing()
-            ProvideGeometryReader()
+//            ProvideGeometryReader()
+            ReturnDifferentView()
         }
     }
 }
