@@ -12,7 +12,8 @@ struct ViewLayoutApp: App {
     var body: some Scene {
         WindowGroup {
 //            GiveCustomFrame()
-            ControlSpacing()
+//            ControlSpacing()
+            ProvideGeometryReader()
         }
     }
 }
