@@ -14,7 +14,8 @@ struct ViewLayoutApp: App {
 //            GiveCustomFrame()
 //            ControlSpacing()
 //            ProvideGeometryReader()
-            ReturnDifferentView()
+//            ReturnDifferentView()
+            CreateViewsInALoop()
         }
     }
 }
