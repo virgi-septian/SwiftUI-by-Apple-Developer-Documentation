@@ -16,7 +16,8 @@ struct ViewLayoutApp: App {
 //            ProvideGeometryReader()
 //            ReturnDifferentView()
 //            CreateViewsInALoop()
-            LayoutPriority()
+//            LayoutPriority()
+            TwoViewsTheWameWidthOrHeight()
         }
     }
 }
