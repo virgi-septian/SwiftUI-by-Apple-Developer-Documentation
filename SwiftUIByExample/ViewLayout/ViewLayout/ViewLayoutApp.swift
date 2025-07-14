@@ -15,7 +15,8 @@ struct ViewLayoutApp: App {
 //            ControlSpacing()
 //            ProvideGeometryReader()
 //            ReturnDifferentView()
-            CreateViewsInALoop()
+//            CreateViewsInALoop()
+            LayoutPriority()
         }
     }
 }
