@@ -17,7 +17,8 @@ struct ViewLayoutApp: App {
 //            ReturnDifferentView()
 //            CreateViewsInALoop()
 //            LayoutPriority()
-            TwoViewsTheWameWidthOrHeight()
+//            TwoViewsTheWameWidthOrHeight()
+            ProvideVisualStructure()
         }
     }
 }
