@@ -18,7 +18,8 @@ struct ViewLayoutApp: App {
 //            CreateViewsInALoop()
 //            LayoutPriority()
 //            TwoViewsTheWameWidthOrHeight()
-            ProvideVisualStructure()
+//            ProvideVisualStructure()
+            InsetTheSafeArea()
         }
     }
 }
