@@ -19,7 +19,8 @@ struct ViewLayoutApp: App {
 //            LayoutPriority()
 //            TwoViewsTheWameWidthOrHeight()
 //            ProvideVisualStructure()
-            InsetTheSafeArea()
+//            InsetTheSafeArea()
+            HideTheSystemUI()
         }
     }
 }
