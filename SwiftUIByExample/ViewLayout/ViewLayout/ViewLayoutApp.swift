@@ -20,7 +20,8 @@ struct ViewLayoutApp: App {
 //            TwoViewsTheWameWidthOrHeight()
 //            ProvideVisualStructure()
 //            InsetTheSafeArea()
-            HideTheSystemUI()
+//            HideTheSystemUI()
+            StopSystemGesture()
         }
     }
 }
