@@ -21,7 +21,8 @@ struct ViewLayoutApp: App {
 //            ProvideVisualStructure()
 //            InsetTheSafeArea()
 //            HideTheSystemUI()
-            StopSystemGesture()
+//            StopSystemGesture()
+            DynamicallyChange()
         }
     }
 }
