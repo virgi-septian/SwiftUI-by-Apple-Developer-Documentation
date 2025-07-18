@@ -22,7 +22,9 @@ struct ViewLayoutApp: App {
 //            InsetTheSafeArea()
 //            HideTheSystemUI()
 //            StopSystemGesture()
-            DynamicallyChange()
+//            DynamicallyChange()
+//            CreateACustomLayout()
+            CreateAnAdaptiveLayout()
         }
     }
 }
