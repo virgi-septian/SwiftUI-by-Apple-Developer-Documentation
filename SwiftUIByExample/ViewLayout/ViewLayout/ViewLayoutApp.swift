@@ -24,7 +24,8 @@ struct ViewLayoutApp: App {
 //            StopSystemGesture()
 //            DynamicallyChange()
 //            CreateACustomLayout()
-            CreateAnAdaptiveLayout()
+//            CreateAnAdaptiveLayout()
+            AddXxtraPadding()
         }
     }
 }
