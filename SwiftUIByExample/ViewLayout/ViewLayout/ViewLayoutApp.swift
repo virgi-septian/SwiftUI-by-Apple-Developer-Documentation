@@ -26,7 +26,8 @@ struct ViewLayoutApp: App {
 //            CreateACustomLayout()
 //            CreateAnAdaptiveLayout()
 //            AddXxtraPadding()
-            DynamicallyAdjustTheAppearance()
+//            DynamicallyAdjustTheAppearance()
+            AdjustTheSizeOfAView()
         }
     }
 }
