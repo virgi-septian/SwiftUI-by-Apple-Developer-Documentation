@@ -30,7 +30,8 @@ struct ViewLayoutApp: App {
 //            AdjustTheSizeOfAView()
 //            DetectWhenTheSizeOrPositionOfAViewChanges()
 //            ScenePadding()
-            CustomizeStackLayouts()
+//            CustomizeStackLayouts()
+            MakeAFixedSizeSpacer()
         }
     }
 }
