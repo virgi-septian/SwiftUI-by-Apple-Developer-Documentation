@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct InterestingUIApp: App {
-    @StateObject private var containerData = ZoomContainerData()
+//    @StateObject private var containerData = ZoomContainerData()
     var body: some Scene {
         WindowGroup {
             //MARK: - Interisting UI
@@ -25,7 +25,8 @@ struct InterestingUIApp: App {
 //            ContentPullToSearch()
             
 //            ContentResizableHeaderScrollView()
-            ContentSkeletonView()
+//            ContentSkeletonView()
+            ContentCalendar()
         }
     }
 }
