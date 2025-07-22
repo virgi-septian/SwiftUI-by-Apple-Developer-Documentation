@@ -29,7 +29,8 @@ struct ViewLayoutApp: App {
 //            DynamicallyAdjustTheAppearance()
 //            AdjustTheSizeOfAView()
 //            DetectWhenTheSizeOrPositionOfAViewChanges()
-            ScenePadding()
+//            ScenePadding()
+            CustomizeStackLayouts()
         }
     }
 }
