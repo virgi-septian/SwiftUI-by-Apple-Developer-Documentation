@@ -28,7 +28,8 @@ struct ViewLayoutApp: App {
 //            AddXxtraPadding()
 //            DynamicallyAdjustTheAppearance()
 //            AdjustTheSizeOfAView()
-            DetectWhenTheSizeOrPositionOfAViewChanges()
+//            DetectWhenTheSizeOrPositionOfAViewChanges()
+            ScenePadding()
         }
     }
 }
