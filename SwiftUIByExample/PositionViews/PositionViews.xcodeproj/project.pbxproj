@@ -16,6 +16,7 @@
 		1AFF822C2E30883D006FA03D /* ChangeTheOrderOfViewLayering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF82272E30883D006FA03D /* ChangeTheOrderOfViewLayering.swift */; };
 		1AFF822E2E308907006FA03D /* CreateDifferentLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF822D2E3088FF006FA03D /* CreateDifferentLayouts.swift */; };
 		1AFF82302E308B27006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF822F2E308B17006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift */; };
+		1AFF82322E308CBA006FA03D /* AddHorizontalAndVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF82312E308CAE006FA03D /* AddHorizontalAndVertical.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1AFF82282E30883D006FA03D /* CustomizeStackLayouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeStackLayouts.swift; sourceTree = "<group>"; };
 		1AFF822D2E3088FF006FA03D /* CreateDifferentLayouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDifferentLayouts.swift; sourceTree = "<group>"; };
 		1AFF822F2E308B17006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticallySwitchBetweenHStackandVStack.swift; sourceTree = "<group>"; };
+		1AFF82312E308CAE006FA03D /* AddHorizontalAndVertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHorizontalAndVertical.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +90,7 @@
 				1AFF821F2E308787006FA03D /* PositionViewsApp.swift */,
 				1AFF822D2E3088FF006FA03D /* CreateDifferentLayouts.swift */,
 				1AFF822F2E308B17006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift */,
+				1AFF82312E308CAE006FA03D /* AddHorizontalAndVertical.swift */,
 				1AFF82252E30883D006FA03D /* MakeAFixedSizeSpacer.swift */,
 				1AFF82262E30883D006FA03D /* LayerViewsOnTopOfEachOther.swift */,
 				1AFF82272E30883D006FA03D /* ChangeTheOrderOfViewLayering.swift */,
@@ -173,6 +176,7 @@
 				1AFF82292E30883D006FA03D /* MakeAFixedSizeSpacer.swift in Sources */,
 				1AFF822A2E30883D006FA03D /* CustomizeStackLayouts.swift in Sources */,
 				1AFF82302E308B27006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift in Sources */,
+				1AFF82322E308CBA006FA03D /* AddHorizontalAndVertical.swift in Sources */,
 				1AFF822B2E30883D006FA03D /* LayerViewsOnTopOfEachOther.swift in Sources */,
 				1AFF822C2E30883D006FA03D /* ChangeTheOrderOfViewLayering.swift in Sources */,
 				1AFF82222E3087BA006FA03D /* ContentView.swift in Sources */,
