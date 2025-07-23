@@ -26,7 +26,8 @@ struct InterestingUIApp: App {
             
 //            ContentResizableHeaderScrollView()
 //            ContentSkeletonView()
-            ContentCalendar()
+//            ContentCalendar()
+            DragDropList()
         }
     }
 }

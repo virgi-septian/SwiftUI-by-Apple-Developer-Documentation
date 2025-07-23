@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ProfileScrollTabView: View {
     @State private var searchText = ""
@@ -84,7 +85,7 @@ struct InstagramLikeView: View {
         }
         .refreshable {
             // ⏳ Loading muncul di bawah Search
-            try? await Task.sleep(for: .seconds(5))
+//            try? await Task.sleep(for: .seconds(5))
             items.shuffle()
         }
     }
