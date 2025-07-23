@@ -6,17 +6,56 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1AFF81E42E308490006FA03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A35B2EE2E307EE300963B5B /* Assets.xcassets */; };
+		1AFF81E52E30849A006FA03D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A35B2EB2E307E5A00963B5B /* Preview Assets.xcassets */; };
+		1AFF81E62E3084D2006FA03D /* ScenePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B3012E307EE300963B5B /* ScenePadding.swift */; };
+		1AFF81E72E3084D2006FA03D /* GiveCustomFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2F82E307EE300963B5B /* GiveCustomFrame.swift */; };
+		1AFF81E82E3084D2006FA03D /* ProvideGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2FE2E307EE300963B5B /* ProvideGeometryReader.swift */; };
+		1AFF81E92E3084D2006FA03D /* TwoViewsTheWameWidthOrHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B3032E307EE300963B5B /* TwoViewsTheWameWidthOrHeight.swift */; };
+		1AFF81EA2E3084D2006FA03D /* CreateAnAdaptiveLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2F22E307EE300963B5B /* CreateAnAdaptiveLayout.swift */; };
+		1AFF81EC2E3084D2006FA03D /* CreateACustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2F12E307EE300963B5B /* CreateACustomLayout.swift */; };
+		1AFF81ED2E3084D2006FA03D /* HideTheSystemUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2F92E307EE300963B5B /* HideTheSystemUI.swift */; };
+		1AFF81EE2E3084D2006FA03D /* ControlSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2F02E307EE300963B5B /* ControlSpacing.swift */; };
+		1AFF81EF2E3084D2006FA03D /* InsetTheSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2FA2E307EE300963B5B /* InsetTheSafeArea.swift */; };
+		1AFF81F02E3084D2006FA03D /* StopSystemGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B3022E307EE300963B5B /* StopSystemGesture.swift */; };
+		1AFF81F12E3084D2006FA03D /* DynamicallyAdjustTheAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2F62E307EE300963B5B /* DynamicallyAdjustTheAppearance.swift */; };
+		1AFF81F22E3084D2006FA03D /* ViewLayoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B3042E307EE300963B5B /* ViewLayoutApp.swift */; };
+		1AFF81F32E3084D2006FA03D /* CreateViewsInALoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2F32E307EE300963B5B /* CreateViewsInALoop.swift */; };
+		1AFF81F42E3084D2006FA03D /* ProvideVisualStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2FF2E307EE300963B5B /* ProvideVisualStructure.swift */; };
+		1AFF81F62E3084D2006FA03D /* DynamicallyChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2F72E307EE300963B5B /* DynamicallyChange.swift */; };
+		1AFF81F92E3084D2006FA03D /* AddXxtraPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2EC2E307EE300963B5B /* AddXxtraPadding.swift */; };
+		1AFF81FA2E3084D2006FA03D /* DetectWhenTheSizeOrPositionOfAViewChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2F52E307EE300963B5B /* DetectWhenTheSizeOrPositionOfAViewChanges.swift */; };
+		1AFF81FB2E3084D2006FA03D /* ReturnDifferentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B3002E307EE300963B5B /* ReturnDifferentView.swift */; };
+		1AFF81FC2E3084D2006FA03D /* AdjustTheSizeOfAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2ED2E307EE300963B5B /* AdjustTheSizeOfAView.swift */; };
+		1AFF81FE2E3084D2006FA03D /* LayoutPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35B2FC2E307EE300963B5B /* LayoutPriority.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		1A35B2EB2E307E5A00963B5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A35B2EC2E307EE300963B5B /* AddXxtraPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddXxtraPadding.swift; sourceTree = "<group>"; };
+		1A35B2ED2E307EE300963B5B /* AdjustTheSizeOfAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustTheSizeOfAView.swift; sourceTree = "<group>"; };
+		1A35B2EE2E307EE300963B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A35B2F02E307EE300963B5B /* ControlSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSpacing.swift; sourceTree = "<group>"; };
+		1A35B2F12E307EE300963B5B /* CreateACustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateACustomLayout.swift; sourceTree = "<group>"; };
+		1A35B2F22E307EE300963B5B /* CreateAnAdaptiveLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnAdaptiveLayout.swift; sourceTree = "<group>"; };
+		1A35B2F32E307EE300963B5B /* CreateViewsInALoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewsInALoop.swift; sourceTree = "<group>"; };
+		1A35B2F52E307EE300963B5B /* DetectWhenTheSizeOrPositionOfAViewChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectWhenTheSizeOrPositionOfAViewChanges.swift; sourceTree = "<group>"; };
+		1A35B2F62E307EE300963B5B /* DynamicallyAdjustTheAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicallyAdjustTheAppearance.swift; sourceTree = "<group>"; };
+		1A35B2F72E307EE300963B5B /* DynamicallyChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicallyChange.swift; sourceTree = "<group>"; };
+		1A35B2F82E307EE300963B5B /* GiveCustomFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveCustomFrame.swift; sourceTree = "<group>"; };
+		1A35B2F92E307EE300963B5B /* HideTheSystemUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTheSystemUI.swift; sourceTree = "<group>"; };
+		1A35B2FA2E307EE300963B5B /* InsetTheSafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTheSafeArea.swift; sourceTree = "<group>"; };
+		1A35B2FC2E307EE300963B5B /* LayoutPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPriority.swift; sourceTree = "<group>"; };
+		1A35B2FE2E307EE300963B5B /* ProvideGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvideGeometryReader.swift; sourceTree = "<group>"; };
+		1A35B2FF2E307EE300963B5B /* ProvideVisualStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvideVisualStructure.swift; sourceTree = "<group>"; };
+		1A35B3002E307EE300963B5B /* ReturnDifferentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnDifferentView.swift; sourceTree = "<group>"; };
+		1A35B3012E307EE300963B5B /* ScenePadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePadding.swift; sourceTree = "<group>"; };
+		1A35B3022E307EE300963B5B /* StopSystemGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopSystemGesture.swift; sourceTree = "<group>"; };
+		1A35B3032E307EE300963B5B /* TwoViewsTheWameWidthOrHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewsTheWameWidthOrHeight.swift; sourceTree = "<group>"; };
+		1A35B3042E307EE300963B5B /* ViewLayoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayoutApp.swift; sourceTree = "<group>"; };
 		1A7656872E1F21FC0082B7AB /* ViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		1A7656892E1F21FC0082B7AB /* ViewLayout */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ViewLayout;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A7656842E1F21FC0082B7AB /* Frameworks */ = {
@@ -29,10 +68,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A35B2E32E307E0D00963B5B /* ViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B2EC2E307EE300963B5B /* AddXxtraPadding.swift */,
+				1A35B2ED2E307EE300963B5B /* AdjustTheSizeOfAView.swift */,
+				1A35B2F02E307EE300963B5B /* ControlSpacing.swift */,
+				1A35B2F12E307EE300963B5B /* CreateACustomLayout.swift */,
+				1A35B2F22E307EE300963B5B /* CreateAnAdaptiveLayout.swift */,
+				1A35B2F32E307EE300963B5B /* CreateViewsInALoop.swift */,
+				1A35B2F52E307EE300963B5B /* DetectWhenTheSizeOrPositionOfAViewChanges.swift */,
+				1A35B2F62E307EE300963B5B /* DynamicallyAdjustTheAppearance.swift */,
+				1A35B2F72E307EE300963B5B /* DynamicallyChange.swift */,
+				1A35B2F82E307EE300963B5B /* GiveCustomFrame.swift */,
+				1A35B2F92E307EE300963B5B /* HideTheSystemUI.swift */,
+				1A35B2FA2E307EE300963B5B /* InsetTheSafeArea.swift */,
+				1A35B2FC2E307EE300963B5B /* LayoutPriority.swift */,
+				1A35B2FE2E307EE300963B5B /* ProvideGeometryReader.swift */,
+				1A35B2FF2E307EE300963B5B /* ProvideVisualStructure.swift */,
+				1A35B3002E307EE300963B5B /* ReturnDifferentView.swift */,
+				1A35B3012E307EE300963B5B /* ScenePadding.swift */,
+				1A35B3022E307EE300963B5B /* StopSystemGesture.swift */,
+				1A35B3032E307EE300963B5B /* TwoViewsTheWameWidthOrHeight.swift */,
+				1A35B3042E307EE300963B5B /* ViewLayoutApp.swift */,
+				1A35B2EE2E307EE300963B5B /* Assets.xcassets */,
+				1A35B2EA2E307E4A00963B5B /* Preview Content */,
+			);
+			path = ViewLayout;
+			sourceTree = "<group>";
+		};
+		1A35B2EA2E307E4A00963B5B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A35B2EB2E307E5A00963B5B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		1A76567E2E1F21FC0082B7AB = {
 			isa = PBXGroup;
 			children = (
-				1A7656892E1F21FC0082B7AB /* ViewLayout */,
+				1A35B2E32E307E0D00963B5B /* ViewLayout */,
 				1A7656882E1F21FC0082B7AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +135,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1A7656892E1F21FC0082B7AB /* ViewLayout */,
 			);
 			name = ViewLayout;
 			packageProductDependencies = (
@@ -109,6 +182,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFF81E52E30849A006FA03D /* Preview Assets.xcassets in Resources */,
+				1AFF81E42E308490006FA03D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +194,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFF81E62E3084D2006FA03D /* ScenePadding.swift in Sources */,
+				1AFF81E72E3084D2006FA03D /* GiveCustomFrame.swift in Sources */,
+				1AFF81E82E3084D2006FA03D /* ProvideGeometryReader.swift in Sources */,
+				1AFF81E92E3084D2006FA03D /* TwoViewsTheWameWidthOrHeight.swift in Sources */,
+				1AFF81EA2E3084D2006FA03D /* CreateAnAdaptiveLayout.swift in Sources */,
+				1AFF81EC2E3084D2006FA03D /* CreateACustomLayout.swift in Sources */,
+				1AFF81ED2E3084D2006FA03D /* HideTheSystemUI.swift in Sources */,
+				1AFF81EE2E3084D2006FA03D /* ControlSpacing.swift in Sources */,
+				1AFF81EF2E3084D2006FA03D /* InsetTheSafeArea.swift in Sources */,
+				1AFF81F02E3084D2006FA03D /* StopSystemGesture.swift in Sources */,
+				1AFF81F12E3084D2006FA03D /* DynamicallyAdjustTheAppearance.swift in Sources */,
+				1AFF81F22E3084D2006FA03D /* ViewLayoutApp.swift in Sources */,
+				1AFF81F32E3084D2006FA03D /* CreateViewsInALoop.swift in Sources */,
+				1AFF81F42E3084D2006FA03D /* ProvideVisualStructure.swift in Sources */,
+				1AFF81F62E3084D2006FA03D /* DynamicallyChange.swift in Sources */,
+				1AFF81F92E3084D2006FA03D /* AddXxtraPadding.swift in Sources */,
+				1AFF81FA2E3084D2006FA03D /* DetectWhenTheSizeOrPositionOfAViewChanges.swift in Sources */,
+				1AFF81FB2E3084D2006FA03D /* ReturnDifferentView.swift in Sources */,
+				1AFF81FC2E3084D2006FA03D /* AdjustTheSizeOfAView.swift in Sources */,
+				1AFF81FE2E3084D2006FA03D /* LayoutPriority.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
