@@ -18,6 +18,7 @@
 		1AFF82302E308B27006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF822F2E308B17006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift */; };
 		1AFF82322E308CBA006FA03D /* AddHorizontalAndVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF82312E308CAE006FA03D /* AddHorizontalAndVertical.swift */; };
 		1AFF82342E308DD1006FA03D /* MakeAScrollViewMoveToALocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF82332E308DB6006FA03D /* MakeAScrollViewMoveToALocation.swift */; };
+		1AFF82362E309117006FA03D /* Create3DEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF82352E309110006FA03D /* Create3DEffects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		1AFF822F2E308B17006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticallySwitchBetweenHStackandVStack.swift; sourceTree = "<group>"; };
 		1AFF82312E308CAE006FA03D /* AddHorizontalAndVertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHorizontalAndVertical.swift; sourceTree = "<group>"; };
 		1AFF82332E308DB6006FA03D /* MakeAScrollViewMoveToALocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAScrollViewMoveToALocation.swift; sourceTree = "<group>"; };
+		1AFF82352E309110006FA03D /* Create3DEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Create3DEffects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -94,6 +96,7 @@
 				1AFF822F2E308B17006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift */,
 				1AFF82312E308CAE006FA03D /* AddHorizontalAndVertical.swift */,
 				1AFF82332E308DB6006FA03D /* MakeAScrollViewMoveToALocation.swift */,
+				1AFF82352E309110006FA03D /* Create3DEffects.swift */,
 				1AFF82252E30883D006FA03D /* MakeAFixedSizeSpacer.swift */,
 				1AFF82262E30883D006FA03D /* LayerViewsOnTopOfEachOther.swift */,
 				1AFF82272E30883D006FA03D /* ChangeTheOrderOfViewLayering.swift */,
@@ -182,6 +185,7 @@
 				1AFF82322E308CBA006FA03D /* AddHorizontalAndVertical.swift in Sources */,
 				1AFF82342E308DD1006FA03D /* MakeAScrollViewMoveToALocation.swift in Sources */,
 				1AFF822B2E30883D006FA03D /* LayerViewsOnTopOfEachOther.swift in Sources */,
+				1AFF82362E309117006FA03D /* Create3DEffects.swift in Sources */,
 				1AFF822C2E30883D006FA03D /* ChangeTheOrderOfViewLayering.swift in Sources */,
 				1AFF82222E3087BA006FA03D /* ContentView.swift in Sources */,
 			);
