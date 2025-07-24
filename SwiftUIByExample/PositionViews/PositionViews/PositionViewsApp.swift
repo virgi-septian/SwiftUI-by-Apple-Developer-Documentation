@@ -20,7 +20,8 @@ struct PositionViewsApp: App {
 //            LazyLoadViews()
 //            PositionViewsInAFixedGrid()
 //            PositionViewsInAGrid()
-            DismissTheKeyboardWhenScrolling()
+//            DismissTheKeyboardWhenScrolling()
+            HideTheScrollIndicators()
         }
     }
 }
