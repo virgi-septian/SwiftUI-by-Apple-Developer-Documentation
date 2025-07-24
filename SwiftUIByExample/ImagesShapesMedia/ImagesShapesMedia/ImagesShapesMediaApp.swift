@@ -22,7 +22,14 @@ struct ImagesShapesMediaApp: App {
 //            PlayMoviesWithVideoPlayer()
 //            IntegrateSpriteKit()
 //            LoadARemoteImage()
-            ColorOpacityInSFSymbols()
+//            ColorOpacityInSFSymbols()
+//            LetUsersSelectPictures()
+//            LetUsersImportVideos()
+//            AnimateSFSymbols()
+//            ReadTheColorValuesFromaColor()
+//            CombineShapes()
+//            CreateaMeshGradient()
+            MakeSFSymbolsDrawThemselves()
         }
     }
 }
