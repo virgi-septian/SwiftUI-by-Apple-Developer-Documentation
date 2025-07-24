@@ -28,7 +28,8 @@ struct InterestingUIApp: App {
 //            ContentSkeletonView()
 //            ContentCalendar()
 //            DragDropList()
-            ZoomTransitions()
+//            ZoomTransitions()
+            MultipleImageViewer()
         }
     }
 }
