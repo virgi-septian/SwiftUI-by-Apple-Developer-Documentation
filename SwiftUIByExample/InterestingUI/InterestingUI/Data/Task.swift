@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Task: Identifiable, Hashable {
+struct TaskActivity: Identifiable, Hashable {
     var id: UUID = .init()
     var title: String
     var status: Status

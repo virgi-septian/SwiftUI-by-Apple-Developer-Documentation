@@ -9,19 +9,19 @@ import SwiftUI
 
 struct DragDropList: View {
     /// Sample Tasks
-    @State private var todo: [Task] = [
+    @State private var todo: [TaskActivity] = [
         .init(title: "Edit Video!", status: .todo)
     ]
-    @State private var working: [Task] = [
+    @State private var working: [TaskActivity] = [
         .init(title: "Record Video", status: .working)
     ]
-    @State private var completed: [Task] = [
+    @State private var completed: [TaskActivity] = [
         .init(title: "Implement Drag & Drop", status: .completed),
         .init(title: "Update Mockview App!", status: .completed),
     ]
 
     /// View Properties
-    @State private var currentlyDragging: Task?
+    @State private var currentlyDragging: TaskActivity?
     var body: some View {
         HStack(spacing: 2) {
             TodoView()
@@ -36,7 +36,7 @@ struct DragDropList: View {
     }
     /// Tasks View
     @ViewBuilder
-    func TasksView(_ tasks: [Task]) -> some View {
+    func TasksView(_ tasks: [TaskActivity]) -> some View {
         VStack(alignment: .leading, spacing: 10, content: {
             ForEach(tasks) { task in
                 GeometryReader {
@@ -52,7 +52,7 @@ struct DragDropList: View {
 
     /// Task Row
     @ViewBuilder
-    func TaskRow(_ task: Task, _ size: CGSize) -> some View {
+    func TaskRow(_ task: TaskActivity, _ size: CGSize) -> some View {
         Text(task.title)
             .font(.callout)
             .padding(.horizontal, 15)
@@ -139,7 +139,7 @@ struct DragDropList: View {
 
     
     /// Mengganti Item dalam List
-    func replaceItem(tasks: inout [Task], droppingTask: Task, status: Status) {
+    func replaceItem(tasks: inout [TaskActivity], droppingTask: TaskActivity, status: Status) {
         if let currentlyDragging { // Asumsi 'currentlyDragging' adalah variabel yang menyimpan Task yang sedang di-drag
             if let sourceIndex = tasks.firstIndex(where: { $0.id == currentlyDragging.id }),
                let destinationIndex = tasks.firstIndex(where: { $0.id == droppingTask.id }) {
