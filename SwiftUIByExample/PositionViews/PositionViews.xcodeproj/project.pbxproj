@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1AD24B942E31E27300414A5C /* LazyLoadViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B932E31E26D00414A5C /* LazyLoadViews.swift */; };
 		1AD24B962E31E4C300414A5C /* PositionViewsInAFixedGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B952E31E4B400414A5C /* PositionViewsInAFixedGrid.swift */; };
+		1AD24B982E31ED7500414A5C /* PositionViewsInAGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B972E31ED6900414A5C /* PositionViewsInAGrid.swift */; };
 		1AFF82202E3087BA006FA03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF821D2E308787006FA03D /* Assets.xcassets */; };
 		1AFF82212E3087BA006FA03D /* PositionViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF821F2E308787006FA03D /* PositionViewsApp.swift */; };
 		1AFF82222E3087BA006FA03D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF821E2E308787006FA03D /* ContentView.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		1AD24B932E31E26D00414A5C /* LazyLoadViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyLoadViews.swift; sourceTree = "<group>"; };
 		1AD24B952E31E4B400414A5C /* PositionViewsInAFixedGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewsInAFixedGrid.swift; sourceTree = "<group>"; };
+		1AD24B972E31ED6900414A5C /* PositionViewsInAGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewsInAGrid.swift; sourceTree = "<group>"; };
 		1AFF82092E30875A006FA03D /* PositionViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PositionViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFF821D2E308787006FA03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AFF821E2E308787006FA03D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				1AFF821E2E308787006FA03D /* ContentView.swift */,
 				1AFF821F2E308787006FA03D /* PositionViewsApp.swift */,
 				1AD24B952E31E4B400414A5C /* PositionViewsInAFixedGrid.swift */,
+				1AD24B972E31ED6900414A5C /* PositionViewsInAGrid.swift */,
 				1AD24B932E31E26D00414A5C /* LazyLoadViews.swift */,
 				1AFF822D2E3088FF006FA03D /* CreateDifferentLayouts.swift */,
 				1AFF822F2E308B17006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift */,
@@ -195,6 +198,7 @@
 				1AD24B962E31E4C300414A5C /* PositionViewsInAFixedGrid.swift in Sources */,
 				1AFF82362E309117006FA03D /* Create3DEffects.swift in Sources */,
 				1AFF822C2E30883D006FA03D /* ChangeTheOrderOfViewLayering.swift in Sources */,
+				1AD24B982E31ED7500414A5C /* PositionViewsInAGrid.swift in Sources */,
 				1AFF82222E3087BA006FA03D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

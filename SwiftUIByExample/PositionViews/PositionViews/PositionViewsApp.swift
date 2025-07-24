@@ -18,7 +18,8 @@ struct PositionViewsApp: App {
 //            CustomizeStackLayouts()
 //            Create3DEffects()
 //            LazyLoadViews()
-            PositionViewsInAFixedGrid()
+//            PositionViewsInAFixedGrid()
+            PositionViewsInAGrid()
         }
     }
 }
