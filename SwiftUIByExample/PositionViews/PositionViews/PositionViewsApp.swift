@@ -16,6 +16,12 @@ struct PositionViewsApp: App {
 //            LayerViewsOnTopOfEachOther()
 //            ChangeTheOrderOfViewLayering()
 //            CustomizeStackLayouts()
+//            Create3DEffects()
+//            LazyLoadViews()
+//            PositionViewsInAFixedGrid()
+//            PositionViewsInAGrid()
+//            DismissTheKeyboardWhenScrolling()
+            HideTheScrollIndicators()
         }
     }
 }
