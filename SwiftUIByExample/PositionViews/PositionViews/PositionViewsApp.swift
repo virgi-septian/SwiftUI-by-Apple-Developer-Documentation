@@ -16,7 +16,9 @@ struct PositionViewsApp: App {
 //            LayerViewsOnTopOfEachOther()
 //            ChangeTheOrderOfViewLayering()
 //            CustomizeStackLayouts()
-            Create3DEffects()
+//            Create3DEffects()
+//            LazyLoadViews()
+            PositionViewsInAFixedGrid()
         }
     }
 }
