@@ -19,7 +19,8 @@ struct PositionViewsApp: App {
 //            Create3DEffects()
 //            LazyLoadViews()
 //            PositionViewsInAFixedGrid()
-            PositionViewsInAGrid()
+//            PositionViewsInAGrid()
+            DismissTheKeyboardWhenScrolling()
         }
     }
 }
