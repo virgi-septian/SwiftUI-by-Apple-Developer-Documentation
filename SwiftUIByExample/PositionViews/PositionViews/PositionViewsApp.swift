@@ -22,7 +22,8 @@ struct PositionViewsApp: App {
 //            PositionViewsInAGrid()
 //            DismissTheKeyboardWhenScrolling()
 //            HideTheScrollIndicators()
-            CreateMultiColumnLists()
+//            CreateMultiColumnLists()
+            ContentOrScrollIndicators()
         }
     }
 }
