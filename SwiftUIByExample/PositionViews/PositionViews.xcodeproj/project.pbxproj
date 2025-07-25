@@ -12,6 +12,7 @@
 		1A1F45D72E3336440029FD79 /* FlashTheScrollBarIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F45D62E3336370029FD79 /* FlashTheScrollBarIndicators.swift */; };
 		1A1F45D92E33371D0029FD79 /* MakeAScrollViewSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F45D82E3337140029FD79 /* MakeAScrollViewSnap.swift */; };
 		1A1F45DB2E3339FA0029FD79 /* MakeViewsScrollWithACustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F45DA2E3339EB0029FD79 /* MakeViewsScrollWithACustomTransition.swift */; };
+		1A1F45DD2E333BDE0029FD79 /* MakeAScrolViewStartAtTheBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F45DC2E333BCE0029FD79 /* MakeAScrolViewStartAtTheBottom.swift */; };
 		1AD24B942E31E27300414A5C /* LazyLoadViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B932E31E26D00414A5C /* LazyLoadViews.swift */; };
 		1AD24B962E31E4C300414A5C /* PositionViewsInAFixedGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B952E31E4B400414A5C /* PositionViewsInAFixedGrid.swift */; };
 		1AD24B982E31ED7500414A5C /* PositionViewsInAGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B972E31ED6900414A5C /* PositionViewsInAGrid.swift */; };
@@ -37,6 +38,7 @@
 		1A1F45D62E3336370029FD79 /* FlashTheScrollBarIndicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashTheScrollBarIndicators.swift; sourceTree = "<group>"; };
 		1A1F45D82E3337140029FD79 /* MakeAScrollViewSnap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAScrollViewSnap.swift; sourceTree = "<group>"; };
 		1A1F45DA2E3339EB0029FD79 /* MakeViewsScrollWithACustomTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeViewsScrollWithACustomTransition.swift; sourceTree = "<group>"; };
+		1A1F45DC2E333BCE0029FD79 /* MakeAScrolViewStartAtTheBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAScrolViewStartAtTheBottom.swift; sourceTree = "<group>"; };
 		1AD24B932E31E26D00414A5C /* LazyLoadViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyLoadViews.swift; sourceTree = "<group>"; };
 		1AD24B952E31E4B400414A5C /* PositionViewsInAFixedGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewsInAFixedGrid.swift; sourceTree = "<group>"; };
 		1AD24B972E31ED6900414A5C /* PositionViewsInAGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewsInAGrid.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				1A1F45D62E3336370029FD79 /* FlashTheScrollBarIndicators.swift */,
 				1A1F45D82E3337140029FD79 /* MakeAScrollViewSnap.swift */,
 				1A1F45DA2E3339EB0029FD79 /* MakeViewsScrollWithACustomTransition.swift */,
+				1A1F45DC2E333BCE0029FD79 /* MakeAScrolViewStartAtTheBottom.swift */,
 				1AFF82262E30883D006FA03D /* LayerViewsOnTopOfEachOther.swift */,
 				1AFF82272E30883D006FA03D /* ChangeTheOrderOfViewLayering.swift */,
 				1AFF82282E30883D006FA03D /* CustomizeStackLayouts.swift */,
@@ -228,6 +231,7 @@
 				1AFF82222E3087BA006FA03D /* ContentView.swift in Sources */,
 				1A1F45D92E33371D0029FD79 /* MakeAScrollViewSnap.swift in Sources */,
 				1A1F45DB2E3339FA0029FD79 /* MakeViewsScrollWithACustomTransition.swift in Sources */,
+				1A1F45DD2E333BDE0029FD79 /* MakeAScrolViewStartAtTheBottom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
