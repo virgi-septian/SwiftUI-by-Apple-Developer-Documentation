@@ -25,7 +25,8 @@ struct PositionViewsApp: App {
 //            CreateMultiColumnLists()
 //            ContentOrScrollIndicators()
 //            FlashTheScrollBarIndicators()
-            MakeAScrollViewSnap()
+//            MakeAScrollViewSnap()
+            MakeViewsScrollWithACustomTransition()
         }
     }
 }
