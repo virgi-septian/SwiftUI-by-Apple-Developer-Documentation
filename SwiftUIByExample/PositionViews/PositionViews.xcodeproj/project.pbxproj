@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1F45D32E332DA50029FD79 /* CreateMultiColumnLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1F45D22E332D9B0029FD79 /* CreateMultiColumnLists.swift */; };
 		1AD24B942E31E27300414A5C /* LazyLoadViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B932E31E26D00414A5C /* LazyLoadViews.swift */; };
 		1AD24B962E31E4C300414A5C /* PositionViewsInAFixedGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B952E31E4B400414A5C /* PositionViewsInAFixedGrid.swift */; };
 		1AD24B982E31ED7500414A5C /* PositionViewsInAGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B972E31ED6900414A5C /* PositionViewsInAGrid.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A1F45D22E332D9B0029FD79 /* CreateMultiColumnLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMultiColumnLists.swift; sourceTree = "<group>"; };
 		1AD24B932E31E26D00414A5C /* LazyLoadViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyLoadViews.swift; sourceTree = "<group>"; };
 		1AD24B952E31E4B400414A5C /* PositionViewsInAFixedGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewsInAFixedGrid.swift; sourceTree = "<group>"; };
 		1AD24B972E31ED6900414A5C /* PositionViewsInAGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionViewsInAGrid.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				1AFF821D2E308787006FA03D /* Assets.xcassets */,
 				1AFF821E2E308787006FA03D /* ContentView.swift */,
 				1AFF821F2E308787006FA03D /* PositionViewsApp.swift */,
+				1A1F45D22E332D9B0029FD79 /* CreateMultiColumnLists.swift */,
 				1AD24B992E31F28D00414A5C /* DismissTheKeyboardWhenScrolling.swift */,
 				1AD24B9B2E31F34800414A5C /* HideTheScrollIndicators.swift */,
 				1AD24B952E31E4B400414A5C /* PositionViewsInAFixedGrid.swift */,
@@ -201,6 +204,7 @@
 				1AFF82302E308B27006FA03D /* AutomaticallySwitchBetweenHStackandVStack.swift in Sources */,
 				1AFF82322E308CBA006FA03D /* AddHorizontalAndVertical.swift in Sources */,
 				1AFF82342E308DD1006FA03D /* MakeAScrollViewMoveToALocation.swift in Sources */,
+				1A1F45D32E332DA50029FD79 /* CreateMultiColumnLists.swift in Sources */,
 				1AFF822B2E30883D006FA03D /* LayerViewsOnTopOfEachOther.swift in Sources */,
 				1AD24B962E31E4C300414A5C /* PositionViewsInAFixedGrid.swift in Sources */,
 				1AFF82362E309117006FA03D /* Create3DEffects.swift in Sources */,

@@ -21,7 +21,8 @@ struct PositionViewsApp: App {
 //            PositionViewsInAFixedGrid()
 //            PositionViewsInAGrid()
 //            DismissTheKeyboardWhenScrolling()
-            HideTheScrollIndicators()
+//            HideTheScrollIndicators()
+            CreateMultiColumnLists()
         }
     }
 }

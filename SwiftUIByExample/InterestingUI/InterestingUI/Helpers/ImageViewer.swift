@@ -58,9 +58,7 @@ struct ImageViewer<Content: View, Overlay: View>: View {
                         config
                             .clipShape(.rect(cornerRadius: self.config.cornerRadius))
                     }
-
                 }
-
             }
             .navigationDestination(isPresented: $isPresented) {
                 TabView(selection: $activeTabID) {
@@ -105,7 +103,6 @@ struct ImageViewer<Content: View, Overlay: View>: View {
         }
     }
 
-    
     struct Config2 {
         var height: CGFloat = 150
         var cornerRadius: CGFloat = 15
@@ -118,7 +115,6 @@ struct ImageViewer<Content: View, Overlay: View>: View {
 extension ContainerValues {
     @Entry var activeViewID: AnyHashable?
 }
-
 
 #Preview {
     MultipleImageViewer()
