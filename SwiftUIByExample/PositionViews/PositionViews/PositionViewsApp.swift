@@ -23,7 +23,8 @@ struct PositionViewsApp: App {
 //            DismissTheKeyboardWhenScrolling()
 //            HideTheScrollIndicators()
 //            CreateMultiColumnLists()
-            ContentOrScrollIndicators()
+//            ContentOrScrollIndicators()
+            FlashTheScrollBarIndicators()
         }
     }
 }
