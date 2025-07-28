@@ -31,7 +31,8 @@ struct PositionViewsApp: App {
 //            DisableScrollViewClipping()
 //            ReadTheSizeAndPosition()
 //            ScrollToExactLocations()
-            DetectWhetherAScrollViewIsCurrentlyMovingOrIsIdle()
+//            DetectWhetherAScrollViewIsCurrentlyMovingOrIsIdle()
+            AdjustTheScrollEdgeEffect()
         }
     }
 }

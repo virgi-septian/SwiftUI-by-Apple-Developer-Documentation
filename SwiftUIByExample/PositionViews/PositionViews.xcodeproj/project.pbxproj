@@ -22,6 +22,7 @@
 		1AE47C812E37568700B9FBBC /* ReadTheSizeAndPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE47C802E37567800B9FBBC /* ReadTheSizeAndPosition.swift */; };
 		1AE47C832E3762BC00B9FBBC /* ScrollToExactLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE47C822E3762B200B9FBBC /* ScrollToExactLocations.swift */; };
 		1AE47C852E37635C00B9FBBC /* DetectWhetherAScrollViewIsCurrentlyMovingOrIsIdle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE47C842E37634600B9FBBC /* DetectWhetherAScrollViewIsCurrentlyMovingOrIsIdle.swift */; };
+		1AE47C872E37642300B9FBBC /* AdjustTheScrollEdgeEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE47C862E37640C00B9FBBC /* AdjustTheScrollEdgeEffect.swift */; };
 		1AFF82202E3087BA006FA03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF821D2E308787006FA03D /* Assets.xcassets */; };
 		1AFF82212E3087BA006FA03D /* PositionViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF821F2E308787006FA03D /* PositionViewsApp.swift */; };
 		1AFF82222E3087BA006FA03D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF821E2E308787006FA03D /* ContentView.swift */; };
@@ -52,6 +53,7 @@
 		1AE47C802E37567800B9FBBC /* ReadTheSizeAndPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTheSizeAndPosition.swift; sourceTree = "<group>"; };
 		1AE47C822E3762B200B9FBBC /* ScrollToExactLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToExactLocations.swift; sourceTree = "<group>"; };
 		1AE47C842E37634600B9FBBC /* DetectWhetherAScrollViewIsCurrentlyMovingOrIsIdle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectWhetherAScrollViewIsCurrentlyMovingOrIsIdle.swift; sourceTree = "<group>"; };
+		1AE47C862E37640C00B9FBBC /* AdjustTheScrollEdgeEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustTheScrollEdgeEffect.swift; sourceTree = "<group>"; };
 		1AFF82092E30875A006FA03D /* PositionViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PositionViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFF821D2E308787006FA03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AFF821E2E308787006FA03D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				1AE47C842E37634600B9FBBC /* DetectWhetherAScrollViewIsCurrentlyMovingOrIsIdle.swift */,
 				1AFF82252E30883D006FA03D /* MakeAFixedSizeSpacer.swift */,
 				1A1F45D42E3334770029FD79 /* ContentOrScrollIndicators.swift */,
+				1AE47C862E37640C00B9FBBC /* AdjustTheScrollEdgeEffect.swift */,
 				1A1F45D62E3336370029FD79 /* FlashTheScrollBarIndicators.swift */,
 				1A1F45D82E3337140029FD79 /* MakeAScrollViewSnap.swift */,
 				1A1F45DA2E3339EB0029FD79 /* MakeViewsScrollWithACustomTransition.swift */,
@@ -243,6 +246,7 @@
 				1AD24B9A2E31F2AA00414A5C /* DismissTheKeyboardWhenScrolling.swift in Sources */,
 				1A1F45D52E3334810029FD79 /* ContentOrScrollIndicators.swift in Sources */,
 				1A1F45D72E3336440029FD79 /* FlashTheScrollBarIndicators.swift in Sources */,
+				1AE47C872E37642300B9FBBC /* AdjustTheScrollEdgeEffect.swift in Sources */,
 				1AD24B982E31ED7500414A5C /* PositionViewsInAGrid.swift in Sources */,
 				1AFF82222E3087BA006FA03D /* ContentView.swift in Sources */,
 				1A1F45D92E33371D0029FD79 /* MakeAScrollViewSnap.swift in Sources */,
