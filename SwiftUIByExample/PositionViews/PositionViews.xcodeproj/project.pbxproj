@@ -19,6 +19,7 @@
 		1AD24B9A2E31F2AA00414A5C /* DismissTheKeyboardWhenScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B992E31F28D00414A5C /* DismissTheKeyboardWhenScrolling.swift */; };
 		1AD24B9C2E31F35300414A5C /* HideTheScrollIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD24B9B2E31F34800414A5C /* HideTheScrollIndicators.swift */; };
 		1AE47C7F2E3719AF00B9FBBC /* DisableScrollViewClipping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE47C7E2E3719A100B9FBBC /* DisableScrollViewClipping.swift */; };
+		1AE47C812E37568700B9FBBC /* ReadTheSizeAndPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE47C802E37567800B9FBBC /* ReadTheSizeAndPosition.swift */; };
 		1AFF82202E3087BA006FA03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF821D2E308787006FA03D /* Assets.xcassets */; };
 		1AFF82212E3087BA006FA03D /* PositionViewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF821F2E308787006FA03D /* PositionViewsApp.swift */; };
 		1AFF82222E3087BA006FA03D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF821E2E308787006FA03D /* ContentView.swift */; };
@@ -46,6 +47,7 @@
 		1AD24B992E31F28D00414A5C /* DismissTheKeyboardWhenScrolling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissTheKeyboardWhenScrolling.swift; sourceTree = "<group>"; };
 		1AD24B9B2E31F34800414A5C /* HideTheScrollIndicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTheScrollIndicators.swift; sourceTree = "<group>"; };
 		1AE47C7E2E3719A100B9FBBC /* DisableScrollViewClipping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableScrollViewClipping.swift; sourceTree = "<group>"; };
+		1AE47C802E37567800B9FBBC /* ReadTheSizeAndPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTheSizeAndPosition.swift; sourceTree = "<group>"; };
 		1AFF82092E30875A006FA03D /* PositionViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PositionViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFF821D2E308787006FA03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AFF821E2E308787006FA03D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				1AFF821E2E308787006FA03D /* ContentView.swift */,
 				1AFF821F2E308787006FA03D /* PositionViewsApp.swift */,
 				1AE47C7E2E3719A100B9FBBC /* DisableScrollViewClipping.swift */,
+				1AE47C802E37567800B9FBBC /* ReadTheSizeAndPosition.swift */,
 				1A1F45D22E332D9B0029FD79 /* CreateMultiColumnLists.swift */,
 				1AD24B992E31F28D00414A5C /* DismissTheKeyboardWhenScrolling.swift */,
 				1AD24B9B2E31F34800414A5C /* HideTheScrollIndicators.swift */,
@@ -228,6 +231,7 @@
 				1AD24B962E31E4C300414A5C /* PositionViewsInAFixedGrid.swift in Sources */,
 				1AFF82362E309117006FA03D /* Create3DEffects.swift in Sources */,
 				1AFF822C2E30883D006FA03D /* ChangeTheOrderOfViewLayering.swift in Sources */,
+				1AE47C812E37568700B9FBBC /* ReadTheSizeAndPosition.swift in Sources */,
 				1AD24B9A2E31F2AA00414A5C /* DismissTheKeyboardWhenScrolling.swift in Sources */,
 				1A1F45D52E3334810029FD79 /* ContentOrScrollIndicators.swift in Sources */,
 				1A1F45D72E3336440029FD79 /* FlashTheScrollBarIndicators.swift in Sources */,

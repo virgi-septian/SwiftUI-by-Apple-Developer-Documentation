@@ -28,7 +28,8 @@ struct PositionViewsApp: App {
 //            MakeAScrollViewSnap()
 //            MakeViewsScrollWithACustomTransition()
 //            MakeAScrolViewStartAtTheBottom()
-            DisableScrollViewClipping()
+//            DisableScrollViewClipping()
+            ReadTheSizeAndPosition()
         }
     }
 }
