@@ -30,7 +30,8 @@ struct PositionViewsApp: App {
 //            MakeAScrolViewStartAtTheBottom()
 //            DisableScrollViewClipping()
 //            ReadTheSizeAndPosition()
-            ScrollToExactLocations()
+//            ScrollToExactLocations()
+            DetectWhetherAScrollViewIsCurrentlyMovingOrIsIdle()
         }
     }
 }
