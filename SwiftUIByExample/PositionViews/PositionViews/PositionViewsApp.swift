@@ -27,7 +27,8 @@ struct PositionViewsApp: App {
 //            FlashTheScrollBarIndicators()
 //            MakeAScrollViewSnap()
 //            MakeViewsScrollWithACustomTransition()
-            MakeAScrolViewStartAtTheBottom()
+//            MakeAScrolViewStartAtTheBottom()
+            DisableScrollViewClipping()
         }
     }
 }
