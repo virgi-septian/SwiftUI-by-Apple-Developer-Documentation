@@ -11,7 +11,12 @@ import SwiftUI
 struct UserInterfaceControlsApp: App {
     var body: some Scene {
         WindowGroup {
-            DisableTheOverlayColorForImagesInsideButtonAndNavigationLink()
+//            DisableTheOverlayColorForImagesInsideButtonAndNavigationLink()
+//            GetBorderedButtons()
+//            GroupViewsTogether()
+//            ReadTextFromATextField()
+//            ActionWhenTheUserSubmitsATextField()
+            ActionWhenTheUserSubmitsATextField()
         }
     }
 }
