@@ -19,7 +19,9 @@ struct UserInterfaceControlsApp: App {
 //            ActionWhenTheUserSubmitsATextField()
 //            CustomizeTheSubmitButton()
 //            AddABorderToATextField()
-            AddAPlaceholderToATextField()
+//            AddAPlaceholderToATextField()
+//            DisableAutoCorrectInATextField()
+            DismissTheKeyboardForATextField()
         }
     }
 }
