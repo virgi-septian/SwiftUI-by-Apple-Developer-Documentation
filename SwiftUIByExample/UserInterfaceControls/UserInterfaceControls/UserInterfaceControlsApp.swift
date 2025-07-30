@@ -16,7 +16,8 @@ struct UserInterfaceControlsApp: App {
 //            GroupViewsTogether()
 //            ReadTextFromATextField()
 //            ActionWhenTheUserSubmitsATextField()
-            ActionWhenTheUserSubmitsATextField()
+//            ActionWhenTheUserSubmitsATextField()
+            CustomizeTheSubmitButton()
         }
     }
 }
