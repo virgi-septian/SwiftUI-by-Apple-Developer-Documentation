@@ -18,7 +18,8 @@ struct UserInterfaceControlsApp: App {
 //            ActionWhenTheUserSubmitsATextField()
 //            ActionWhenTheUserSubmitsATextField()
 //            CustomizeTheSubmitButton()
-            AddABorderToATextField()
+//            AddABorderToATextField()
+            AddAPlaceholderToATextField()
         }
     }
 }
