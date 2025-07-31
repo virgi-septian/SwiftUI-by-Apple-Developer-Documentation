@@ -23,7 +23,8 @@ struct UserInterfaceControlsApp: App {
 //            DisableAutoCorrectInATextField()
 //            DismissTheKeyboardForATextField()
 //            MakeATextFieldOrTextEditorHaveDefaultFocus()
-            MakeATextFieldExpandVerticallyAsTheUserTypes()
+//            MakeATextFieldExpandVerticallyAsTheUserTypes()
+            FormatATextFieldForNumbers()
         }
     }
 }
