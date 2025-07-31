@@ -24,7 +24,8 @@ struct UserInterfaceControlsApp: App {
 //            DismissTheKeyboardForATextField()
 //            MakeATextFieldOrTextEditorHaveDefaultFocus()
 //            MakeATextFieldExpandVerticallyAsTheUserTypes()
-            FormatATextFieldForNumbers()
+//            FormatATextFieldForNumbers()
+            CreateSecureTextFields()
         }
     }
 }
