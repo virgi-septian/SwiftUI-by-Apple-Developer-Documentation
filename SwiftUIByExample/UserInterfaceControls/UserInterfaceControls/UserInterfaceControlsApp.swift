@@ -26,7 +26,8 @@ struct UserInterfaceControlsApp: App {
 //            MakeATextFieldExpandVerticallyAsTheUserTypes()
 //            FormatATextFieldForNumbers()
 //            CreateSecureTextFields()
-            CreateAToggleSwitch()
+//            CreateAToggleSwitch()
+            CreateASlider()
         }
     }
 }
