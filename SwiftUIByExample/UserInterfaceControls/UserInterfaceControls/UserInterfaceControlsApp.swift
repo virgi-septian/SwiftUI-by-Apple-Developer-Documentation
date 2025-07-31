@@ -22,7 +22,8 @@ struct UserInterfaceControlsApp: App {
 //            AddAPlaceholderToATextField()
 //            DisableAutoCorrectInATextField()
 //            DismissTheKeyboardForATextField()
-            MakeATextFieldOrTextEditorHaveDefaultFocus()
+//            MakeATextFieldOrTextEditorHaveDefaultFocus()
+            MakeATextFieldExpandVerticallyAsTheUserTypes()
         }
     }
 }
