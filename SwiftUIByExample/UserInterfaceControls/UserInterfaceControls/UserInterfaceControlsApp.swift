@@ -30,7 +30,8 @@ struct UserInterfaceControlsApp: App {
 //            CreateASlider()
 //            CreateAPicker()
 //            CreateADatePicker()
-            CreateASegmentedControl()
+//            CreateASegmentedControl()
+            CreateAStepper()
         }
     }
 }
