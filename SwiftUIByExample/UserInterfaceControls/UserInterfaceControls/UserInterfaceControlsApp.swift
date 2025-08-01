@@ -33,7 +33,8 @@ struct UserInterfaceControlsApp: App {
 //            CreateASegmentedControl()
 //            CreateAStepper()
 //            CreateMultiLineEditableText()
-            LetUsersSelectAColor()
+//            LetUsersSelectAColor()
+            ShowIndeterminateProgress()
         }
     }
 }
