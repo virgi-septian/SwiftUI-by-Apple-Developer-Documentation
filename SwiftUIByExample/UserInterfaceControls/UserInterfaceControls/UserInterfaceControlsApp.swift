@@ -27,7 +27,10 @@ struct UserInterfaceControlsApp: App {
 //            FormatATextFieldForNumbers()
 //            CreateSecureTextFields()
 //            CreateAToggleSwitch()
-            CreateASlider()
+//            CreateASlider()
+//            CreateAPicker()
+//            CreateADatePicker()
+            CreateASegmentedControl()
         }
     }
 }
