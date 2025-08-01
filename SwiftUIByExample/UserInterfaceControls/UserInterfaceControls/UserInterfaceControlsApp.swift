@@ -32,7 +32,8 @@ struct UserInterfaceControlsApp: App {
 //            CreateADatePicker()
 //            CreateASegmentedControl()
 //            CreateAStepper()
-            CreateMultiLineEditableText()
+//            CreateMultiLineEditableText()
+            LetUsersSelectAColor()
         }
     }
 }
