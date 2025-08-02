@@ -38,7 +38,8 @@ struct UserInterfaceControlsApp: App {
 //            ShowAMapView()
 //            ShowAnnotations()
 //            OpenWebLinksInSafari()
-            SelectMultipleDates()
+//            SelectMultipleDates()
+            HideTheLabelOfAPicker()
         }
     }
 }
