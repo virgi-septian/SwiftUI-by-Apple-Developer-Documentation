@@ -35,7 +35,8 @@ struct UserInterfaceControlsApp: App {
 //            CreateMultiLineEditableText()
 //            LetUsersSelectAColor()
 //            ShowIndeterminateProgress()
-            ShowAMapView()
+//            ShowAMapView()
+            ShowAnnotations()
         }
     }
 }
