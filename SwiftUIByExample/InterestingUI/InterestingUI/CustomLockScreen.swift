@@ -132,7 +132,6 @@ struct KeypadView: View {
                                     }
                                 }
                             }
-
                         } label: {
                             if item == "" || item == "delete.left" {
                                 Image(systemName: item)
