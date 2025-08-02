@@ -39,7 +39,8 @@ struct UserInterfaceControlsApp: App {
 //            ShowAnnotations()
 //            OpenWebLinksInSafari()
 //            SelectMultipleDates()
-            HideTheLabelOfAPicker()
+//            HideTheLabelOfAPicker()
+            MakeButtonsThatRepeatTheirActionWhenPressed()
         }
     }
 }
