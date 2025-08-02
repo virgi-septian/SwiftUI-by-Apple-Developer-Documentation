@@ -36,7 +36,9 @@ struct UserInterfaceControlsApp: App {
 //            LetUsersSelectAColor()
 //            ShowIndeterminateProgress()
 //            ShowAMapView()
-            ShowAnnotations()
+//            ShowAnnotations()
+//            OpenWebLinksInSafari()
+            SelectMultipleDates()
         }
     }
 }
