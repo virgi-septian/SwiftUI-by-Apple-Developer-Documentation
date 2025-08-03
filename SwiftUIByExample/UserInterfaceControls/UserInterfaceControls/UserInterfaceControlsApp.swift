@@ -41,7 +41,8 @@ struct UserInterfaceControlsApp: App {
 //            SelectMultipleDates()
 //            HideTheLabelOfAPicker()
 //            MakeButtonsThatRepeatTheirActionWhenPressed()
-            EmbedWebContent()
+//            EmbedWebContent()
+            UseRichTextEditing()
         }
     }
 }
