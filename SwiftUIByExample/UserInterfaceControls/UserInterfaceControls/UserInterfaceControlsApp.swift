@@ -40,7 +40,8 @@ struct UserInterfaceControlsApp: App {
 //            OpenWebLinksInSafari()
 //            SelectMultipleDates()
 //            HideTheLabelOfAPicker()
-            MakeButtonsThatRepeatTheirActionWhenPressed()
+//            MakeButtonsThatRepeatTheirActionWhenPressed()
+            EmbedWebContent()
         }
     }
 }
