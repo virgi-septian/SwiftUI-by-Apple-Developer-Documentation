@@ -35,7 +35,8 @@ struct RespondingToEventsApp: App {
 //            DetectWhenYourAppMoves()
 //            RespondToViewLifecycleEvents()
 //            AddKeyboardShortcuts()
-            RunCodeWhenTheAppLaunches()
+//            RunCodeWhenTheAppLaunches()
+            DetectDeviceRotation()
         }
     }
 }
