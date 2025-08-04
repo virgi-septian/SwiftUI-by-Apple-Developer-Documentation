@@ -9,11 +9,21 @@ import SwiftUI
 
 @main
 struct RespondingToEventsApp: App {
+    
+    /// run code when the app launches
+    init() {
+        UserDefaults.standard.register(defaults: [
+            "name": "Taylor Swift",
+            "highScore": 10
+        ])
+    }
+    
     var body: some Scene {
         WindowGroup {
 //            DetectWhenYourAppMoves()
 //            RespondToViewLifecycleEvents()
-            AddKeyboardShortcuts()
+//            AddKeyboardShortcuts()
+            RunCodeWhenTheAppLaunches()
         }
     }
 }
