@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct InterestingUIApp: App {
 //    @StateObject private var containerData = ZoomContainerData()
+    @StateObject private var networkMonitor = NetworkMonitor()
     var body: some Scene {
         WindowGroup {
             //MARK: - Interisting UI
@@ -30,7 +31,10 @@ struct InterestingUIApp: App {
 //            DragDropList()
 //            ZoomTransitions()
 //            MultipleImageViewer()
-            ContentStaggeredView()
+//            ContentStaggeredView()
+            InternetConnectivity()
+                .environment(\.isNetworkConnected, networkMonitor.isConnected)
+                .environment(\.connectionType, networkMonitor.connectionType)
         }
     }
 }
