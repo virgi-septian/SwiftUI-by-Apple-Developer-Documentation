@@ -12,6 +12,7 @@ struct RespondingToEventsApp: App {
     var body: some Scene {
         WindowGroup {
             DetectWhenYourAppMoves()
+            RespondToViewLifecycleEvents()
         }
     }
 }
