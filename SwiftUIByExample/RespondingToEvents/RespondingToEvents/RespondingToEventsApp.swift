@@ -11,8 +11,9 @@ import SwiftUI
 struct RespondingToEventsApp: App {
     var body: some Scene {
         WindowGroup {
-            DetectWhenYourAppMoves()
-            RespondToViewLifecycleEvents()
+//            DetectWhenYourAppMoves()
+//            RespondToViewLifecycleEvents()
+            AddKeyboardShortcuts()
         }
     }
 }
