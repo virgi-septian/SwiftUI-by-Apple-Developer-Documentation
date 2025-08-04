@@ -47,7 +47,7 @@ fileprivate struct RemoveSheetShadow: UIViewRepresentable {
 
         DispatchQueue.main.async {
             if let shadowView = view.dropShadowView {
-                shadowView.layer.shadowColor = UIColor.red.cgColor
+                shadowView.layer.shadowColor = UIColor.clear.cgColor
             }
         }
 
