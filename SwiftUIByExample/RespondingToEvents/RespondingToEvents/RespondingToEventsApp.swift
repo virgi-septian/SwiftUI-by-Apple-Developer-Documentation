@@ -43,7 +43,8 @@ struct RespondingToEventsApp: App {
 //            LetUsersShareContent()
 //            LetUsersFindAndReplaceText()
 //            SupportDragAndDrop()
-            DetectAndRespondToKeyPressEvents()
+//            DetectAndRespondToKeyPressEvents()
+            AddHapticEffects()
         }
     }
 }
