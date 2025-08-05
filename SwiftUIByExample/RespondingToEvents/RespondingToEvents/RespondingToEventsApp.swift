@@ -41,7 +41,8 @@ struct RespondingToEventsApp: App {
 //            RunAnAsynchronousTask()
 //            LetTheUserPasteData()
 //            LetUsersShareContent()
-            LetUsersFindAndReplaceText()
+//            LetUsersFindAndReplaceText()
+            SupportDragAndDrop()
         }
     }
 }
