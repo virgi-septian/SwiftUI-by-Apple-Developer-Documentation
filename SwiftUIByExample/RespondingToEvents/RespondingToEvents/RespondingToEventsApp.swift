@@ -42,7 +42,8 @@ struct RespondingToEventsApp: App {
 //            LetTheUserPasteData()
 //            LetUsersShareContent()
 //            LetUsersFindAndReplaceText()
-            SupportDragAndDrop()
+//            SupportDragAndDrop()
+            DetectAndRespondToKeyPressEvents()
         }
     }
 }
