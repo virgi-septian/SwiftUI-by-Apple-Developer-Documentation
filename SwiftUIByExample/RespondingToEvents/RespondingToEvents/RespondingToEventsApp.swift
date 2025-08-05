@@ -40,7 +40,8 @@ struct RespondingToEventsApp: App {
 //            AddAToolbarToTheKeyboard()
 //            RunAnAsynchronousTask()
 //            LetTheUserPasteData()
-            LetUsersShareContent()
+//            LetUsersShareContent()
+            LetUsersFindAndReplaceText()
         }
     }
 }
