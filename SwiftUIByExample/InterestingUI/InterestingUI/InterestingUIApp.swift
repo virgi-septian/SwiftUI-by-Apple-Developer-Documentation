@@ -32,9 +32,10 @@ struct InterestingUIApp: App {
 //            ZoomTransitions()
 //            MultipleImageViewer()
 //            ContentStaggeredView()
-            InternetConnectivity()
-                .environment(\.isNetworkConnected, networkMonitor.isConnected)
-                .environment(\.connectionType, networkMonitor.connectionType)
+//            InternetConnectivity()
+//                .environment(\.isNetworkConnected, networkMonitor.isConnected)
+//                .environment(\.connectionType, networkMonitor.connectionType)
+            ParallaxCarousel()
         }
     }
 }
