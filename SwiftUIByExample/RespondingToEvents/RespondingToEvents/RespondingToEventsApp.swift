@@ -37,7 +37,8 @@ struct RespondingToEventsApp: App {
 //            AddKeyboardShortcuts()
 //            RunCodeWhenTheAppLaunches()
 //            DetectDeviceRotation()
-            AddAToolbarToTheKeyboard()
+//            AddAToolbarToTheKeyboard()
+            RunAnAsynchronousTask()
         }
     }
 }
