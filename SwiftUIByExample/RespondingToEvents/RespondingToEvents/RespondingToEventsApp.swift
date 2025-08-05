@@ -38,7 +38,8 @@ struct RespondingToEventsApp: App {
 //            RunCodeWhenTheAppLaunches()
 //            DetectDeviceRotation()
 //            AddAToolbarToTheKeyboard()
-            RunAnAsynchronousTask()
+//            RunAnAsynchronousTask()
+            LetTheUserPasteData()
         }
     }
 }
