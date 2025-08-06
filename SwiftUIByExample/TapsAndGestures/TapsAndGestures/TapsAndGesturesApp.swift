@@ -12,7 +12,8 @@ struct TapsAndGesturesApp: App {
     var body: some Scene {
         WindowGroup {
 //            AddAGestureRecognizerToAView()
-            ReadTapAndDoubleTapGestures()
+//            ReadTapAndDoubleTapGestures()
+            ForceOneGestureToRecognizeBeforeAnother()
         }
     }
 }
