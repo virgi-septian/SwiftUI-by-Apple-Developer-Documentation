@@ -18,7 +18,8 @@ struct TapsAndGesturesApp: App {
 //            CreateGestureChains()
 //            DetectTheUserHoveringOverAView()
 //            DetectShakeGesture()
-            ControlTheTappableAreaOfAView()
+//            ControlTheTappableAreaOfAView()
+            DisableTapsForAView()
         }
     }
 }
