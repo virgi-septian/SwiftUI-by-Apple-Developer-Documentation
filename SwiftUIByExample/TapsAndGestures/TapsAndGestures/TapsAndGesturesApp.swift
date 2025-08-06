@@ -17,7 +17,8 @@ struct TapsAndGesturesApp: App {
 //            MakeTwoGesturesRecognizeAtTheSameTime()
 //            CreateGestureChains()
 //            DetectTheUserHoveringOverAView()
-            DetectShakeGesture()
+//            DetectShakeGesture()
+            ControlTheTappableAreaOfAView()
         }
     }
 }
