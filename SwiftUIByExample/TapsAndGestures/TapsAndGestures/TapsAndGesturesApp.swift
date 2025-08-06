@@ -15,7 +15,8 @@ struct TapsAndGesturesApp: App {
 //            ReadTapAndDoubleTapGestures()
 //            ForceOneGestureToRecognizeBeforeAnother()
 //            MakeTwoGesturesRecognizeAtTheSameTime()
-            CreateGestureChains()
+//            CreateGestureChains()
+            DetectTheUserHoveringOverAView()
         }
     }
 }
