@@ -13,7 +13,8 @@ struct TapsAndGesturesApp: App {
         WindowGroup {
 //            AddAGestureRecognizerToAView()
 //            ReadTapAndDoubleTapGestures()
-            ForceOneGestureToRecognizeBeforeAnother()
+//            ForceOneGestureToRecognizeBeforeAnother()
+            MakeTwoGesturesRecognizeAtTheSameTime()
         }
     }
 }
