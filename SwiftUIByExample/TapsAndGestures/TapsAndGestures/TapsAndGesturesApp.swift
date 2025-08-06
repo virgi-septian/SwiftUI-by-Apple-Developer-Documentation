@@ -19,7 +19,8 @@ struct TapsAndGesturesApp: App {
 //            DetectTheUserHoveringOverAView()
 //            DetectShakeGesture()
 //            ControlTheTappableAreaOfAView()
-            DisableTapsForAView()
+//            DisableTapsForAView()
+            HandlePinchToZoomForViews()
         }
     }
 }
