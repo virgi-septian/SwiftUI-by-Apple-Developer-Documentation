@@ -48,9 +48,9 @@ struct ParallaxCarousel: View {
                                 GeometryReader { proxy in
                                     let cardSize = proxy.size
                                     /// simple parallax effect (1)
-                                    let minX = proxy.frame(in: .scrollView).minX
+//                                    let minX = proxy.frame(in: .scrollView).minX
                                     
-//                                    let minX = min((proxy.frame(in: .scrollView).minX * 1.4), proxy.size.width * 1.4)
+                                    let minX = min((proxy.frame(in: .scrollView).minX * 1.4), proxy.size.width * 1.4)
 
 //                                    let minX = min((proxy.frame(in: .scrollView).minX - 30.0), proxy.size.width * 1.4)
                                     
@@ -58,7 +58,7 @@ struct ParallaxCarousel: View {
                                         .resizable()
                                         .aspectRatio(contentMode: .fill)
                                         /// use simply scalling
-//                                        .scaleEffect(1.25)
+                                        .scaleEffect(1.25)
                                         .offset(x: -minX)
                                         .frame(width: proxy.size.width * 2.5)
                                         .frame(width: cardSize.width, height: cardSize.height)
@@ -67,7 +67,6 @@ struct ParallaxCarousel: View {
                                         })
                                         .clipShape(.rect(cornerRadius: 15))
                                         .shadow(color: .black.opacity(0.25), radius: 8, x: 5, y: 10)
-                                    
                                 }
                                 .frame(width: size.width - 60, height: size.height - 50)
                                 /// scroll animation
