@@ -14,7 +14,8 @@ struct AdvancedStateApp: App {
 //            UseStateObject()
 //            UseObservedObject()
 //            UseEnvironmentObject()
-            SendStateUpdatesManually()
+//            SendStateUpdatesManually()
+            CreateConstantBindings()
         }
     }
 }
