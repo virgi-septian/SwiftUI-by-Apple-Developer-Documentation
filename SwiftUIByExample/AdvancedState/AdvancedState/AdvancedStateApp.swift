@@ -13,7 +13,8 @@ struct AdvancedStateApp: App {
         WindowGroup {
 //            UseStateObject()
 //            UseObservedObject()
-            UseEnvironmentObject()
+//            UseEnvironmentObject()
+            SendStateUpdatesManually()
         }
     }
 }
