@@ -12,7 +12,8 @@ struct ListsApp: App {
     var body: some Scene {
         WindowGroup {
 //            CreateAListOfStaticItems()
-            CreateAListOfDynamicItems()
+//            CreateAListOfDynamicItems()
+            LetUsersDeleteRowsFromAList()
         }
     }
 }
