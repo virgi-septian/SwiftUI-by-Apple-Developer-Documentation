@@ -11,7 +11,8 @@ import SwiftUI
 struct AdvancedStateApp: App {
     var body: some Scene {
         WindowGroup {
-            UseStateObject()
+//            UseStateObject()
+            UseObservedObject()
         }
     }
 }
