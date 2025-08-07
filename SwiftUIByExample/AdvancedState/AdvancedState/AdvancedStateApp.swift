@@ -12,7 +12,8 @@ struct AdvancedStateApp: App {
     var body: some Scene {
         WindowGroup {
 //            UseStateObject()
-            UseObservedObject()
+//            UseObservedObject()
+            UseEnvironmentObject()
         }
     }
 }
