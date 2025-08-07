@@ -15,7 +15,8 @@ struct AdvancedStateApp: App {
 //            UseObservedObject()
 //            UseEnvironmentObject()
 //            SendStateUpdatesManually()
-            CreateConstantBindings()
+//            CreateConstantBindings()
+            ShowDifferentImagesInLightOrDarkMode()
         }
     }
 }
