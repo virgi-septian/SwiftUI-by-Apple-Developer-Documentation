@@ -6,48 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		1AF21C662E4484FD00A89C94 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF21C652E4484FD00A89C94 /* SDWebImage */; };
-		1AF21C682E4484FD00A89C94 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF21C672E4484FD00A89C94 /* SDWebImageMapKit */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		1A0548882E040AD6006EC6C9 /* InterestingUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterestingUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF21C782E44A00B00A89C94 /* Lists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1A05488A2E040AD6006EC6C9 /* InterestingUI */ = {
+		1AF21C7A2E44A00B00A89C94 /* Lists */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = InterestingUI;
+			path = Lists;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A0548852E040AD6006EC6C9 /* Frameworks */ = {
+		1AF21C752E44A00B00A89C94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF21C682E4484FD00A89C94 /* SDWebImageMapKit in Frameworks */,
-				1AF21C662E4484FD00A89C94 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A05487F2E040AD6006EC6C9 = {
+		1AF21C6F2E44A00B00A89C94 = {
 			isa = PBXGroup;
 			children = (
-				1A05488A2E040AD6006EC6C9 /* InterestingUI */,
-				1A0548892E040AD6006EC6C9 /* Products */,
+				1AF21C7A2E44A00B00A89C94 /* Lists */,
+				1AF21C792E44A00B00A89C94 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1A0548892E040AD6006EC6C9 /* Products */ = {
+		1AF21C792E44A00B00A89C94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A0548882E040AD6006EC6C9 /* InterestingUI.app */,
+				1AF21C782E44A00B00A89C94 /* Lists.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,69 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A0548872E040AD6006EC6C9 /* InterestingUI */ = {
+		1AF21C772E44A00B00A89C94 /* Lists */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A0548962E040AD8006EC6C9 /* Build configuration list for PBXNativeTarget "InterestingUI" */;
+			buildConfigurationList = 1AF21C862E44A00D00A89C94 /* Build configuration list for PBXNativeTarget "Lists" */;
 			buildPhases = (
-				1A0548842E040AD6006EC6C9 /* Sources */,
-				1A0548852E040AD6006EC6C9 /* Frameworks */,
-				1A0548862E040AD6006EC6C9 /* Resources */,
+				1AF21C742E44A00B00A89C94 /* Sources */,
+				1AF21C752E44A00B00A89C94 /* Frameworks */,
+				1AF21C762E44A00B00A89C94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1A05488A2E040AD6006EC6C9 /* InterestingUI */,
+				1AF21C7A2E44A00B00A89C94 /* Lists */,
 			);
-			name = InterestingUI;
+			name = Lists;
 			packageProductDependencies = (
-				1AF21C652E4484FD00A89C94 /* SDWebImage */,
-				1AF21C672E4484FD00A89C94 /* SDWebImageMapKit */,
 			);
-			productName = InterestingUI;
-			productReference = 1A0548882E040AD6006EC6C9 /* InterestingUI.app */;
+			productName = Lists;
+			productReference = 1AF21C782E44A00B00A89C94 /* Lists.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1A0548802E040AD6006EC6C9 /* Project object */ = {
+		1AF21C702E44A00B00A89C94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					1A0548872E040AD6006EC6C9 = {
+					1AF21C772E44A00B00A89C94 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 1A0548832E040AD6006EC6C9 /* Build configuration list for PBXProject "InterestingUI" */;
+			buildConfigurationList = 1AF21C732E44A00B00A89C94 /* Build configuration list for PBXProject "Lists" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 1A05487F2E040AD6006EC6C9;
+			mainGroup = 1AF21C6F2E44A00B00A89C94;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				1AF21C642E4484FD00A89C94 /* XCRemoteSwiftPackageReference "SDWebImage" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1A0548892E040AD6006EC6C9 /* Products */;
+			productRefGroup = 1AF21C792E44A00B00A89C94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A0548872E040AD6006EC6C9 /* InterestingUI */,
+				1AF21C772E44A00B00A89C94 /* Lists */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A0548862E040AD6006EC6C9 /* Resources */ = {
+		1AF21C762E44A00B00A89C94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -127,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A0548842E040AD6006EC6C9 /* Sources */ = {
+		1AF21C742E44A00B00A89C94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1A0548942E040AD8006EC6C9 /* Debug */ = {
+		1AF21C842E44A00D00A89C94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -200,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		1A0548952E040AD8006EC6C9 /* Release */ = {
+		1AF21C852E44A00D00A89C94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,30 +244,28 @@
 			};
 			name = Release;
 		};
-		1A0548972E040AD8006EC6C9 /* Debug */ = {
+		1AF21C872E44A00D00A89C94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InterestingUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Lists/Preview Content\"";
 				DEVELOPMENT_TEAM = Q73FTA466A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.InterestingUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.Lists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -287,30 +273,28 @@
 			};
 			name = Debug;
 		};
-		1A0548982E040AD8006EC6C9 /* Release */ = {
+		1AF21C882E44A00D00A89C94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"InterestingUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Lists/Preview Content\"";
 				DEVELOPMENT_TEAM = Q73FTA466A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.InterestingUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.Lists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -321,49 +305,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A0548832E040AD6006EC6C9 /* Build configuration list for PBXProject "InterestingUI" */ = {
+		1AF21C732E44A00B00A89C94 /* Build configuration list for PBXProject "Lists" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A0548942E040AD8006EC6C9 /* Debug */,
-				1A0548952E040AD8006EC6C9 /* Release */,
+				1AF21C842E44A00D00A89C94 /* Debug */,
+				1AF21C852E44A00D00A89C94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A0548962E040AD8006EC6C9 /* Build configuration list for PBXNativeTarget "InterestingUI" */ = {
+		1AF21C862E44A00D00A89C94 /* Build configuration list for PBXNativeTarget "Lists" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A0548972E040AD8006EC6C9 /* Debug */,
-				1A0548982E040AD8006EC6C9 /* Release */,
+				1AF21C872E44A00D00A89C94 /* Debug */,
+				1AF21C882E44A00D00A89C94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1AF21C642E4484FD00A89C94 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.21.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1AF21C652E4484FD00A89C94 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1AF21C642E4484FD00A89C94 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		1AF21C672E4484FD00A89C94 /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1AF21C642E4484FD00A89C94 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 1A0548802E040AD6006EC6C9 /* Project object */;
+	rootObject = 1AF21C702E44A00B00A89C94 /* Project object */;
 }
