@@ -23,7 +23,8 @@ struct ListsApp: App {
 //            UseImplicitStacking()
 //            AdjustListRowSeparatorVisibilityAndColor()
 //            EnablePullToRefresh()
-            AddCustomSwipeActionButtons()
+//            AddCustomSwipeActionButtons()
+            AddSearchTokens()
         }
     }
 }
