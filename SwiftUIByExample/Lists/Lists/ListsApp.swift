@@ -25,7 +25,8 @@ struct ListsApp: App {
 //            EnablePullToRefresh()
 //            AddCustomSwipeActionButtons()
 //            AddSearchTokens()
-            CreateAListOrAForEachFromABinding()
+//            CreateAListOrAForEachFromABinding()
+            AdjustListRowSeparatorInsets()
         }
     }
 }
