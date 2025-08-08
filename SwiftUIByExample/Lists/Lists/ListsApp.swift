@@ -14,7 +14,8 @@ struct ListsApp: App {
 //            CreateAListOfStaticItems()
 //            CreateAListOfDynamicItems()
 //            LetUsersDeleteRowsFromAList()
-            LetUsersMoveRowsInAList()
+//            LetUsersMoveRowsInAList()
+            AddSectionsToAList()
         }
     }
 }
