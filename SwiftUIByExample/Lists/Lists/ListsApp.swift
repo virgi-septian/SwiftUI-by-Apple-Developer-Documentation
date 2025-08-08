@@ -17,7 +17,8 @@ struct ListsApp: App {
 //            LetUsersMoveRowsInAList()
 //            AddSectionsToAList()
 //            EnableEditingOnAList()
-            SetTheBackgroundColorOfListRows()
+//            SetTheBackgroundColorOfListRows()
+            CreateGroupedAndInsetGroupedLists()
         }
     }
 }
