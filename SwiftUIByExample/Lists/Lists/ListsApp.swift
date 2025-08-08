@@ -16,7 +16,8 @@ struct ListsApp: App {
 //            LetUsersDeleteRowsFromAList()
 //            LetUsersMoveRowsInAList()
 //            AddSectionsToAList()
-            EnableEditingOnAList()
+//            EnableEditingOnAList()
+            SetTheBackgroundColorOfListRows()
         }
     }
 }
