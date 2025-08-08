@@ -44,7 +44,7 @@ struct AddSectionsToAList: View {
             }
             .headerProminence(.increased)
             /// If you're targeting iOS 26 or later, you can use the listSectionMargins() modifier to add custom margins to individual sections, like this:
-            .listSectionMargins(.bottom, 150)
+//            .listSectionMargins(.bottom, 150)
             /// This is particularly useful for places when you have a large hero section at the top – perhaps with some background color or image – that must be treated separately from other sections.
         }
         .listStyle(.grouped)
