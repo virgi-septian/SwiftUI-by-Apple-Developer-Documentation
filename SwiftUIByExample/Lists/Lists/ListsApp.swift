@@ -13,7 +13,8 @@ struct ListsApp: App {
         WindowGroup {
 //            CreateAListOfStaticItems()
 //            CreateAListOfDynamicItems()
-            LetUsersDeleteRowsFromAList()
+//            LetUsersDeleteRowsFromAList()
+            LetUsersMoveRowsInAList()
         }
     }
 }
