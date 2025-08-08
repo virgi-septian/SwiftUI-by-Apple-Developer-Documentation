@@ -21,7 +21,8 @@ struct ListsApp: App {
 //            CreateGroupedAndInsetGroupedLists()
 //            ScrollToASpecificRowInAList()
 //            UseImplicitStacking()
-            AdjustListRowSeparatorVisibilityAndColor()
+//            AdjustListRowSeparatorVisibilityAndColor()
+            EnablePullToRefresh()
         }
     }
 }
