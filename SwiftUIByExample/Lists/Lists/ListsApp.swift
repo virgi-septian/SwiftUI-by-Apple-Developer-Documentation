@@ -24,7 +24,8 @@ struct ListsApp: App {
 //            AdjustListRowSeparatorVisibilityAndColor()
 //            EnablePullToRefresh()
 //            AddCustomSwipeActionButtons()
-            AddSearchTokens()
+//            AddSearchTokens()
+            CreateAListOrAForEachFromABinding()
         }
     }
 }
