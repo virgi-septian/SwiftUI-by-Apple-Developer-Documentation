@@ -19,7 +19,8 @@ struct ListsApp: App {
 //            EnableEditingOnAList()
 //            SetTheBackgroundColorOfListRows()
 //            CreateGroupedAndInsetGroupedLists()
-            ScrollToASpecificRowInAList()
+//            ScrollToASpecificRowInAList()
+            UseImplicitStacking()
         }
     }
 }
