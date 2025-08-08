@@ -20,7 +20,8 @@ struct ListsApp: App {
 //            SetTheBackgroundColorOfListRows()
 //            CreateGroupedAndInsetGroupedLists()
 //            ScrollToASpecificRowInAList()
-            UseImplicitStacking()
+//            UseImplicitStacking()
+            AdjustListRowSeparatorVisibilityAndColor()
         }
     }
 }
