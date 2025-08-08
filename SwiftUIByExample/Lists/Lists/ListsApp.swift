@@ -22,7 +22,8 @@ struct ListsApp: App {
 //            ScrollToASpecificRowInAList()
 //            UseImplicitStacking()
 //            AdjustListRowSeparatorVisibilityAndColor()
-            EnablePullToRefresh()
+//            EnablePullToRefresh()
+            AddCustomSwipeActionButtons()
         }
     }
 }
