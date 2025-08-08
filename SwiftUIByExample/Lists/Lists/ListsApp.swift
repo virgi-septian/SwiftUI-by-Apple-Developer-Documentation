@@ -26,7 +26,8 @@ struct ListsApp: App {
 //            AddCustomSwipeActionButtons()
 //            AddSearchTokens()
 //            CreateAListOrAForEachFromABinding()
-            AdjustListRowSeparatorInsets()
+//            AdjustListRowSeparatorInsets()
+            ChangeTheTintColorForIndividualListRows()
         }
     }
 }
