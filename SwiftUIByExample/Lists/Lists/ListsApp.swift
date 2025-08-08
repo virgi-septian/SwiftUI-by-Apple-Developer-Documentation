@@ -27,7 +27,8 @@ struct ListsApp: App {
 //            AddSearchTokens()
 //            CreateAListOrAForEachFromABinding()
 //            AdjustListRowSeparatorInsets()
-            ChangeTheTintColorForIndividualListRows()
+//            ChangeTheTintColorForIndividualListRows()
+            AddListSectionIndexLabels()
         }
     }
 }
