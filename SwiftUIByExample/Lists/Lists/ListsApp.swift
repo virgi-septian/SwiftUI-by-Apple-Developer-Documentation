@@ -18,7 +18,8 @@ struct ListsApp: App {
 //            AddSectionsToAList()
 //            EnableEditingOnAList()
 //            SetTheBackgroundColorOfListRows()
-            CreateGroupedAndInsetGroupedLists()
+//            CreateGroupedAndInsetGroupedLists()
+            ScrollToASpecificRowInAList()
         }
     }
 }
