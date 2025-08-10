@@ -15,7 +15,8 @@ struct FormsApp: App {
 //            BreakingFormsIntoSections()
 //            PickersInForms()
 //            EnablingAndDisablingElements()
-            ShowingAndHidingFormRows()
+//            ShowingAndHidingFormRows()
+            AlignFormTextAndControlsNeatly()
         }
     }
 }
