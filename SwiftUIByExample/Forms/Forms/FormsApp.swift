@@ -11,7 +11,8 @@ import SwiftUI
 struct FormsApp: App {
     var body: some Scene {
         WindowGroup {
-            BasicFormDesign()
+//            BasicFormDesign()
+            BreakingFormsIntoSections()
         }
     }
 }
