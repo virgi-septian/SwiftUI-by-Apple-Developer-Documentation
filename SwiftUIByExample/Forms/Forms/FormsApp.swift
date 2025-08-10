@@ -12,7 +12,9 @@ struct FormsApp: App {
     var body: some Scene {
         WindowGroup {
 //            BasicFormDesign()
-            BreakingFormsIntoSections()
+//            BreakingFormsIntoSections()
+//            PickersInForms()
+            EnablingAndDisablingElements()
         }
     }
 }
