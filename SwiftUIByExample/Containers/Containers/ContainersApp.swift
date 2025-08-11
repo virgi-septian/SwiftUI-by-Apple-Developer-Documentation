@@ -27,7 +27,8 @@ struct ContainersApp: App {
 //            .indexViewStyle(.page(backgroundDisplayMode: .always))
             
 //            GroupViewsTogether()
-            HideAndShowTheStatusBar()
+//            HideAndShowTheStatusBar()
+            CreateAToolbar()
         }
     }
 }
