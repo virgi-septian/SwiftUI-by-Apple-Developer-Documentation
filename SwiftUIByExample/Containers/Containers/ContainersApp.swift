@@ -33,7 +33,9 @@ struct ContainersApp: App {
 //            AddABadgeToTabViewItemsAndListRows()
 //            GroupViewsVisually()
 //            HowToHideAnyBar()
-            CustomizeTheBackgroundColor()
+//            CustomizeTheBackgroundColor()
+//            MakeATabViewMinimizeOnScroll()
+            AddATabViewAccessory()
         }
     }
 }

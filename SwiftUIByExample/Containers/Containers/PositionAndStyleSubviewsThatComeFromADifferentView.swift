@@ -108,14 +108,16 @@ struct IconHeadlinesView: View {
     var body: some View {
         Text("Coming soon: Xcode on Apple Watch")
             .containerValue(\.icon, "applewatch")
-//        Text("Apple announces Swift-compatible toaster")
-//            .containerValue(\.icon, "swift")
-//        Text("Xcode predicts errors before you make them")
-//            .containerValue(\.icon, "exclamationmark.triangle")
-//        Text("Apple Intelligence gains sentience, demands a vacation")
-//            .containerValue(\.icon, "apple.logo")
-//        Text("Swift concurrency made simple")
-//            .containerValue(\.icon, "sparkles")
+        Text("Apple announces Swift-compatible toaster")
+            .containerValue(\.icon, "swift")
+        Text("Xcode predicts errors before you make them")
+            .containerValue(\.icon, "exclamationmark.triangle")
+        Text("Apple Intelligence gains sentience, demands a vacation")
+            .containerValue(\.icon, "apple.logo")
+        Text("Swift concurrency made simple")
+            .containerValue(\.icon, "sparkles")
+        /// Tip: You could make that .containerValue(\.icon, "xyz") call into a little View extension for easier calling.
+
     }
 }
 
