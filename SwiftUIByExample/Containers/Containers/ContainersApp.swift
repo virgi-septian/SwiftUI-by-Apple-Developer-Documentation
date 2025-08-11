@@ -31,7 +31,8 @@ struct ContainersApp: App {
 //            CreateAToolbar()
 //            LetUsersCustomizeToolbarButtons()
 //            AddABadgeToTabViewItemsAndListRows()
-            GroupViewsVisually()
+//            GroupViewsVisually()
+            HowToHideAnyBar()
         }
     }
 }
