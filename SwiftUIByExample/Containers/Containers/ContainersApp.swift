@@ -28,7 +28,8 @@ struct ContainersApp: App {
             
 //            GroupViewsTogether()
 //            HideAndShowTheStatusBar()
-            CreateAToolbar()
+//            CreateAToolbar()
+            LetUsersCustomizeToolbarButtons()
         }
     }
 }
