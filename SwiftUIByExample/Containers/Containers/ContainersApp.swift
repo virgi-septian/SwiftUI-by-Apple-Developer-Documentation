@@ -35,7 +35,8 @@ struct ContainersApp: App {
 //            HowToHideAnyBar()
 //            CustomizeTheBackgroundColor()
 //            MakeATabViewMinimizeOnScroll()
-            AddATabViewAccessory()
+//            AddATabViewAccessory()
+            AddSpaceInAToolbar()
         }
     }
 }
