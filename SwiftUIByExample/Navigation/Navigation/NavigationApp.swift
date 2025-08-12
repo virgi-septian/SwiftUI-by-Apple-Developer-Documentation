@@ -13,7 +13,8 @@ struct NavigationApp: App {
         WindowGroup {
 //            EmbedAView()
 //            LetUsersEditYourNavigationTitle()
-            AddBarItemsToANavigationView()
+//            AddBarItemsToANavigationView()
+            PushANewViewOntoANavigationStack()
         }
     }
 }
