@@ -12,7 +12,8 @@ struct NavigationApp: App {
     var body: some Scene {
         WindowGroup {
 //            EmbedAView()
-            LetUsersEditYourNavigationTitle()
+//            LetUsersEditYourNavigationTitle()
+            AddBarItemsToANavigationView()
         }
     }
 }
