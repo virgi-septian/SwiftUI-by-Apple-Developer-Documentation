@@ -20,7 +20,8 @@ struct NavigationApp: App {
 //            HideAndShowTheSidebarProgrammatically()
 //            CustomizeAWidthOfView()
 //            CustomizeTheDisplayMode()
-            ControlWhichNavigationSplitViewColumnIsShownInCompactLayouts()
+//            ControlWhichNavigationSplitViewColumnIsShownInCompactLayouts()
+            CreateZoomAnimationsVetweenViews()
         }
     }
 }
