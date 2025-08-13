@@ -14,7 +14,8 @@ struct NavigationApp: App {
 //            EmbedAView()
 //            LetUsersEditYourNavigationTitle()
 //            AddBarItemsToANavigationView()
-            PushANewViewOntoANavigationStack()
+//            PushANewViewOntoANavigationStack()
+            SaveAndLoadNavigationStackPaths()
         }
     }
 }
