@@ -17,7 +17,8 @@ struct NavigationApp: App {
 //            PushANewViewOntoANavigationStack()
 //            SaveAndLoadNavigationStackPaths()
 //            CreateManyColumnLayout()
-            HideAndShowTheSidebarProgrammatically()
+//            HideAndShowTheSidebarProgrammatically()
+            CustomizeAWidthOfView()
         }
     }
 }
