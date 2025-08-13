@@ -19,7 +19,8 @@ struct NavigationApp: App {
 //            CreateManyColumnLayout()
 //            HideAndShowTheSidebarProgrammatically()
 //            CustomizeAWidthOfView()
-            CustomizeTheDisplayMode()
+//            CustomizeTheDisplayMode()
+            ControlWhichNavigationSplitViewColumnIsShownInCompactLayouts()
         }
     }
 }
