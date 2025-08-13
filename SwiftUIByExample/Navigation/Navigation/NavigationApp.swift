@@ -15,7 +15,8 @@ struct NavigationApp: App {
 //            LetUsersEditYourNavigationTitle()
 //            AddBarItemsToANavigationView()
 //            PushANewViewOntoANavigationStack()
-            SaveAndLoadNavigationStackPaths()
+//            SaveAndLoadNavigationStackPaths()
+            CreateManyColumnLayout()
         }
     }
 }
