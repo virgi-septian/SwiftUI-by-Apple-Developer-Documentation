@@ -15,7 +15,8 @@ struct AlertsAndMenusApp: App {
 //            AddATextFieldToAnAlert()
 //            AddActionsToAlertButtons()
 //            ShowMultipleAlertsInASingleView()
-            ShowAContextMenu()
+//            ShowAContextMenu()
+            ShowAMenuWhenAButtonIsPressed()
         }
     }
 }
