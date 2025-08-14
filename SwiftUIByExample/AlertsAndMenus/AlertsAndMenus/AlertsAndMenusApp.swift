@@ -13,7 +13,8 @@ struct AlertsAndMenusApp: App {
         WindowGroup {
 //            ShowAnAlert()
 //            AddATextFieldToAnAlert()
-            AddActionsToAlertButtons()
+//            AddActionsToAlertButtons()
+            ShowMultipleAlertsInASingleView()
         }
     }
 }
