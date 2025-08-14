@@ -11,7 +11,8 @@ import SwiftUI
 struct AlertsAndMenusApp: App {
     var body: some Scene {
         WindowGroup {
-            ShowAnAlert()
+//            ShowAnAlert()
+            AddATextFieldToAnAlert()
         }
     }
 }
