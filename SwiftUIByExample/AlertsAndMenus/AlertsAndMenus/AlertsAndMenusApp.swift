@@ -12,7 +12,8 @@ struct AlertsAndMenusApp: App {
     var body: some Scene {
         WindowGroup {
 //            ShowAnAlert()
-            AddATextFieldToAnAlert()
+//            AddATextFieldToAnAlert()
+            AddActionsToAlertButtons()
         }
     }
 }
