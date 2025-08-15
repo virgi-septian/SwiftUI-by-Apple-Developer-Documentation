@@ -14,7 +14,8 @@ struct PresentingViewsApp: App {
 //            PresentANewView()
 //            PresentMultipleSheets()
 //            MakeAViewDismissItself()
-            PreventASheetFromBeingDismissed()
+//            PreventASheetFromBeingDismissed()
+            TellTheUserThatNoContentIsAvailable()
         }
     }
 }
