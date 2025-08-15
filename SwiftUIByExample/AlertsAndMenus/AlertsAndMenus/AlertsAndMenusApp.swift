@@ -16,7 +16,8 @@ struct AlertsAndMenusApp: App {
 //            AddActionsToAlertButtons()
 //            ShowMultipleAlertsInASingleView()
 //            ShowAContextMenu()
-            ShowAMenuWhenAButtonIsPressed()
+//            ShowAMenuWhenAButtonIsPressed()
+            AddInAppPurchasesInSwiftUI()
         }
     }
 }
