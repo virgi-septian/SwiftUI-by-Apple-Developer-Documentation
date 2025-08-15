@@ -12,7 +12,8 @@ struct TransformingViewsApp: App {
     var body: some Scene {
         WindowGroup {
 //            ColorThePaddingAroundAView()
-            StackModifiers()
+//            StackModifiers()
+            DrawABorderAroundAView()
         }
     }
 }
