@@ -13,7 +13,8 @@ struct PresentingViewsApp: App {
         WindowGroup {
 //            PresentANewView()
 //            PresentMultipleSheets()
-            MakeAViewDismissItself()
+//            MakeAViewDismissItself()
+            PreventASheetFromBeingDismissed()
         }
     }
 }
