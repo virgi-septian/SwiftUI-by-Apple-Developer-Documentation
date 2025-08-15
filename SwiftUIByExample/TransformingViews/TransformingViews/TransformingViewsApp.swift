@@ -15,7 +15,8 @@ struct TransformingViewsApp: App {
 //            StackModifiers()
 //            DrawABorderAroundAView()
 //            DrawABorderInsideAView()
-            CreateAMarchingAntsBorderEffect()
+//            CreateAMarchingAntsBorderEffect()
+            DrawAShadowAroundAView()
         }
     }
 }
