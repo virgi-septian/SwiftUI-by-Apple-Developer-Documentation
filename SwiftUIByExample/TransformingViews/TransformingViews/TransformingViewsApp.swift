@@ -11,7 +11,8 @@ import SwiftUI
 struct TransformingViewsApp: App {
     var body: some Scene {
         WindowGroup {
-            ColorThePaddingAroundAView()
+//            ColorThePaddingAroundAView()
+            StackModifiers()
         }
     }
 }
