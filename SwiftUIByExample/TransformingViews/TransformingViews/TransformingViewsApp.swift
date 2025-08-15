@@ -13,7 +13,8 @@ struct TransformingViewsApp: App {
         WindowGroup {
 //            ColorThePaddingAroundAView()
 //            StackModifiers()
-            DrawABorderAroundAView()
+//            DrawABorderAroundAView()
+            DrawABorderInsideAView()
         }
     }
 }
