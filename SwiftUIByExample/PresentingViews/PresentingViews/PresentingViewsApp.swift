@@ -11,7 +11,9 @@ import SwiftUI
 struct PresentingViewsApp: App {
     var body: some Scene {
         WindowGroup {
-            PresentANewView()
+//            PresentANewView()
+//            PresentMultipleSheets()
+            MakeAViewDismissItself()
         }
     }
 }
