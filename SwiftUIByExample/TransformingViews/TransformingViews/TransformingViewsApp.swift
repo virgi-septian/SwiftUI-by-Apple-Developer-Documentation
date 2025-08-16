@@ -16,7 +16,8 @@ struct TransformingViewsApp: App {
 //            DrawABorderAroundAView()
 //            DrawABorderInsideAView()
 //            CreateAMarchingAntsBorderEffect()
-            DrawAShadowAroundAView()
+//            DrawAShadowAroundAView()
+            ClipAView()
         }
     }
 }
