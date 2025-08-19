@@ -36,6 +36,7 @@ struct CreateBasicAnimations: View {
         .padding()
         .border(.red, width: borderThickness)
         .rotationEffect(Angle(degrees: angel))
+        .animation(.easeInOut, value: angel)
     }
 }
 
