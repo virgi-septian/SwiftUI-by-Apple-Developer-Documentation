@@ -35,7 +35,8 @@ struct InterestingUIApp: App {
 //            InternetConnectivity()
 //                .environment(\.isNetworkConnected, networkMonitor.isConnected)
 //                .environment(\.connectionType, networkMonitor.connectionType)
-            ParallaxCarousel()
+//            ParallaxCarousel()
+            ContentRestrictedTextField()
         }
     }
 }

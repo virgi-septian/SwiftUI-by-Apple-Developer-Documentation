@@ -47,3 +47,8 @@ struct ContentRestrictedTextField: View {
         return chars
     }
 }
+
+#Preview {
+    ContentRestrictedTextField()
+}
+

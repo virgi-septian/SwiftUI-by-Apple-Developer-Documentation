@@ -92,5 +92,5 @@ struct InstagramLikeView: View {
 }
 
 #Preview {
-    InstagramLikeView()
+    ProfileScrollTabView()
 }
