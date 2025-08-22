@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct ConfigureCoreDataToWork: View {
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
+    @FetchRequest(sortDescriptors: [
+        SortDescriptor(\.name),
+        SortDescriptor(\.creator, order: .reverse)
+    ]) var languages: FetchedResults<ProgrammingLanguage>
+    
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        VStack {
+            Text("TEst")
+            
+            List(languages) { language in
+                Text(language.name ?? "Unknown")
+            }
+        }
     }
 }
 
 #Preview {
     ConfigureCoreDataToWork()
+        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

@@ -14,7 +14,7 @@ struct DataApp: App {
     var body: some Scene {
         WindowGroup {
             ConfigureCoreDataToWork()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
         }
         .onChange(of: scenePhase) { _ in
             persistenceController.save()

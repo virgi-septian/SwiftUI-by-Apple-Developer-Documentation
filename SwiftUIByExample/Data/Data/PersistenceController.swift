@@ -21,8 +21,8 @@ struct PersistenceController {
         // Create 10 example programming languages.
         for _ in 0..<10 {
             let language = ProgrammingLanguage(context: controller.container.viewContext)
-            language.name = "Example Language 1"
             language.creator = "A. Programmer"
+            language.name = "Example Language 1"
         }
 
         return controller
