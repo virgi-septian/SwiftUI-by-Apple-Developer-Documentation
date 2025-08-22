@@ -10,13 +10,13 @@ import SwiftUI
 struct ConfigureCoreDataToWork: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     
-    @FetchRequest(sortDescriptors: [
-        SortDescriptor(\.name),
-        SortDescriptor(\.creator, order: .reverse)
-    ]) var languages: FetchedResults<ProgrammingLanguage>
+    @FetchRequest(
+        sortDescriptors: [SortDescriptor(\.name)],
+        predicate: NSPredicate(format: "name == %@", "Example Language 3")
+    ) var languages: FetchedResults<ProgrammingLanguage>
     
     var body: some View {
-        VStack {            
+        VStack {
             List(languages) { language in
                 Text(language.name ?? "Unknown")
             }
