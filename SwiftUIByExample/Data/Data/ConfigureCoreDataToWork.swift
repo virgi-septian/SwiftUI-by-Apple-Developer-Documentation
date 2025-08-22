@@ -16,9 +16,7 @@ struct ConfigureCoreDataToWork: View {
     ]) var languages: FetchedResults<ProgrammingLanguage>
     
     var body: some View {
-        VStack {
-            Text("TEst")
-            
+        VStack {            
             List(languages) { language in
                 Text(language.name ?? "Unknown")
             }
