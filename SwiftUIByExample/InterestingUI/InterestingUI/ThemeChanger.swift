@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct ThemeChanger: View {
+    // View Properties
+    @State private var changeTheme: Bool = false
+    @AppStorage("userTheme") private var userTheme: Theme2 = .systemDefault
+    @Environment(\.colorScheme) private var scheme
+    
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        NavigationStack {
+            List {
+                Section("Appearance") {
+                    Button("Change Theme") {
+                        changeTheme.toggle()
+                    }
+                }
+            }
+            .navigationTitle("Settings")
+        }
+        .preferredColorScheme(userTheme.colorScheme)
+        .sheet(isPresented: $changeTheme, content: {
+            ThemeChangeView(scheme: scheme)
+                .presentationDetents([.height(360)])
+                .presentationBackground(.clear)
+        })
     }
 }
 
