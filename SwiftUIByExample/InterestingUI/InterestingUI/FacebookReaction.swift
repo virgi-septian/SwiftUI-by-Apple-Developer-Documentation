@@ -70,7 +70,7 @@ struct FacebookReaction: View {
                     Image("like")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 26)
+                        .frame(height: 23)
 
                     Image("love")
                         .resizable()

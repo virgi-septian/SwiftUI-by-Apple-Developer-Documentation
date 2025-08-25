@@ -15,34 +15,34 @@ struct ReactionModel {
 }
 
 enum Reactions: Int {
-    case like = 1
+    case like = 0
+    case love = 1
     case celebrate = 2
     case haha = 3
-    case love = 4
-    case wow = 5
+    case wow = 4
     case none
     
     var values: (name: String, selectedName: String, image: Image, color: Color) {
         get {
             switch self {
             case .like:
-                return ("Like", "Liked", Image("like"), .purple)
+                return ("Like", "Like", Image(systemName: "hand.thumbsup.fill"), .blue)
+            case .love:
+                return ("Love", "Loved", Image("love"), .pink)
             case .celebrate:
                 return ("Celebrate", "Celebrated", Image("celebrate"), .purple)
             case .haha:
-                return ("Haha", "Haha", Image("haha"), .purple)
-            case .love:
-                return ("Love", "Loved", Image("love"), .purple)
+                return ("Haha", "Haha", Image("haha"), .yellow.mix(with: .gray, by: 0.5))
             case .wow:
-                return ("Wow", "Wow", Image("wow"), .purple)
+                return ("Wow", "Wow", Image("wow"), .yellow.mix(with: .gray, by: 0.5))
             case .none:
-                return ("", "", Image("like"), .purple)
+                return ("", "", Image("like"), .yellow.mix(with: .gray, by: 0.5))
             }
         }
     }
 }
 
-var reactions: [Reactions] = [.like, .celebrate, .haha, .love, .wow]
+var reactions: [Reactions] = [.like, .love, .celebrate, .haha, .wow]
 
 struct ReactionView: View {
     @Binding var reactionModel: ReactionModel
@@ -195,6 +195,10 @@ struct ReactionButtonView: View {
         case ReactionsRange.like:
             reactionModel.xAxisToolTip = ReactionsToolTipLocationX.like
             reactionModel.reaction = .like
+            
+        case ReactionsRange.love:
+            reactionModel.xAxisToolTip = ReactionsToolTipLocationX.love
+            reactionModel.reaction = .love
 
         case ReactionsRange.celebrate:
             reactionModel.xAxisToolTip = ReactionsToolTipLocationX.celebrate
@@ -203,11 +207,7 @@ struct ReactionButtonView: View {
         case ReactionsRange.haha:
             reactionModel.xAxisToolTip = ReactionsToolTipLocationX.haha
             reactionModel.reaction = .haha
-
-        case ReactionsRange.love:
-            reactionModel.xAxisToolTip = ReactionsToolTipLocationX.love
-            reactionModel.reaction = .love
-
+        
         // Terlihat ada pengulangan pada beberapa `case` di bawah ini
         case ReactionsRange.wow:
             reactionModel.xAxisToolTip = ReactionsToolTipLocationX.wow
@@ -237,6 +237,7 @@ struct ReactionToolTipView: View {
                 ForEach(reactions, id: \.self) { reaction in
                     reaction.values.image
                         .resizable()
+                        .foregroundColor(reaction.values.name == "Like" ? Color.blue : Color.gray)
                         .aspectRatio(contentMode: .fit)
                         .frame(width: reaction.values.name == reaction.values.name ? 40 : 40, height: reaction.values.name == reaction.values.name ? 40 : 40)
                         .padding(reactionViewModel.reaction.values.name == reaction.values.name ? -8 : 0)
@@ -264,9 +265,9 @@ struct ReactionToolTipView: View {
 
 enum ReactionsRange {
     static let like = 11 ..< 60
-    static let celebrate = 61 ..< 110
-    static let haha = 111 ..< 160
-    static let love = 161 ..< 210
+    static let love = 61 ..< 110
+    static let celebrate = 111 ..< 160
+    static let haha = 161 ..< 210
     static let wow = 210 ..< 268
     static let trailing = 261 ..< Int(UIScreen.main.bounds.width)
     static let leading = 0 ..< 11
@@ -274,9 +275,9 @@ enum ReactionsRange {
 
 enum ReactionsToolTipLocationX {
     static let like = 10
-    static let celebrate = 40
-    static let haha = 100
-    static let love = 150
+    static let love = 40
+    static let celebrate = 100
+    static let haha = 150
     static let wow = 200
     static let outOfRange = 0
 }
