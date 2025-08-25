@@ -15,11 +15,11 @@ struct ReactionModel {
 }
 
 enum Reactions: Int {
-    case like = 0
-    case celebrate = 1
-    case haha = 2
-    case love = 3
-    case wow = 4
+    case like = 1
+    case celebrate = 2
+    case haha = 3
+    case love = 4
+    case wow = 5
     case none
     
     var values: (name: String, selectedName: String, image: Image, color: Color) {
@@ -28,13 +28,13 @@ enum Reactions: Int {
             case .like:
                 return ("Like", "Liked", Image("like"), .purple)
             case .celebrate:
-                return ("Celebrate", "cele", Image("care"), .purple)
+                return ("Celebrate", "Celebrated", Image("celebrate"), .purple)
             case .haha:
                 return ("Haha", "Haha", Image("haha"), .purple)
             case .love:
                 return ("Love", "Loved", Image("love"), .purple)
             case .wow:
-                return ("Insightful", "Insightful", Image("wow"), .purple)
+                return ("Wow", "Wow", Image("wow"), .purple)
             case .none:
                 return ("", "", Image("like"), .purple)
             }
@@ -42,7 +42,7 @@ enum Reactions: Int {
     }
 }
 
-var reactions: [Reactions] = [.celebrate, .haha, .love, .wow]
+var reactions: [Reactions] = [.like, .celebrate, .haha, .love, .wow]
 
 struct ReactionView: View {
     @Binding var reactionModel: ReactionModel

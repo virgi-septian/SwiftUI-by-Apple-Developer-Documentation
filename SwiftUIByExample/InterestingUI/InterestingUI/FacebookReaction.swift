@@ -29,7 +29,7 @@ struct FacebookReaction: View {
             Rectangle()
                 .foregroundStyle(.gray)
             
-            VStack {
+            VStack(alignment: .leading) {
                 HStack(spacing: 15) {
                     Image("profile")
                         .resizable()
@@ -54,7 +54,8 @@ struct FacebookReaction: View {
                 }
                 .padding([.horizontal, .top])
                 
-                Text("3D Parallax Card Effect in SwiftUI\nEarly Access ✨ Source Code For 3D Parall...")
+                Text("testing")
+                    .padding(.leading, 20)
 
                 Image("image")
                     .resizable()
