@@ -42,7 +42,9 @@ struct DataApp: App {
 //                    }
 //                }
             
-            ReadTheLocationOfUser()
+//            ReadTheLocationOfUser()
+            
+            ReadUserContacts()
         }
     }
 }
