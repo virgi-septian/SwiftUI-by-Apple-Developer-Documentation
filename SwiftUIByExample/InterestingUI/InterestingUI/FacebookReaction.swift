@@ -50,7 +50,6 @@ struct FacebookReaction: View {
                     Spacer()
                     
                     Image(systemName: "ellipsis")
-                        
                 }
                 .padding([.horizontal, .top])
                 

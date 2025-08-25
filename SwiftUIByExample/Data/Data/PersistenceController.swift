@@ -19,7 +19,7 @@ struct PersistenceController {
         let controller = PersistenceController(inMemory: true)
 
         // Create 10 example programming languages.
-        for i in 0..<10 {
+        for i in 0..<3 {
             let language = ProgrammingLanguage(context: controller.container.viewContext)
             language.creator = "A. Programmer"
             language.name = "Example Language \(i)"
