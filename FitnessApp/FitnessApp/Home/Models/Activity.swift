@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Activity {
+struct Activity: Hashable {
     let title: String
     let subtitle: String
     let image: String

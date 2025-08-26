@@ -84,7 +84,7 @@ struct HomeView: View {
                     
                     if !viewModel.activities.isEmpty {
                         LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2)) {
-                            ForEach(viewModel.activities, id: \.id) { activity in
+                            ForEach(viewModel.activities, id: \.self) { activity in
                                 ActivityCard(activity: activity)
                             }
                         }

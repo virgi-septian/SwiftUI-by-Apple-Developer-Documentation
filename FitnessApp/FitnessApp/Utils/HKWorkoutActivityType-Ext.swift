@@ -168,50 +168,6 @@ extension HKWorkoutActivityType {
             case .downhillSkiing:               return "figure.skate"
             case .highIntensityIntervalTraining:return"lowercase"
             case .flexibility:                  return "fig.dance"
-            case .cricket:
-                <#code#>
-            case .jumpRope:
-                <#code#>
-            case .kickboxing:
-                <#code#>
-            case .pilates:
-                <#code#>
-            case .snowboarding:
-                <#code#>
-            case .stairs:
-                <#code#>
-            case .stepTraining:
-                <#code#>
-            case .wheelchairWalkPace:
-                <#code#>
-            case .wheelchairRunPace:
-                <#code#>
-            case .taiChi:
-                <#code#>
-            case .mixedCardio:
-                <#code#>
-            case .handCycling:
-                <#code#>
-            case .discSports:
-                <#code#>
-            case .fitnessGaming:
-                <#code#>
-            case .cardioDance:
-                <#code#>
-            case .socialDance:
-                <#code#>
-            case .pickleball:
-                <#code#>
-            case .cooldown:
-                <#code#>
-            case .swimBikeRun:
-                <#code#>
-            case .transition:
-                <#code#>
-            case .underwaterDiving:
-                <#code#>
-            case .other:
-                <#code#>
             @unknown default:
                 return "fig.dance"
             }
