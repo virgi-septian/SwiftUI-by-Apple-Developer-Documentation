@@ -11,20 +11,39 @@ import FoundationModels
 @available(iOS 26.0, *)
 
 struct GradientGenerator: View {
+    @Binding var generationLimit: Int
+    @Binding var userPrompt: String
+    @Binding var currentPalette: Palette?
+
+    var onTap: (Palette) -> ()
     /// Generator Properties
     @State private var isGenerating: Bool = false
-    @State private var generationLimit: Int = 3
-    @State private var userPrompt: String = ""
-    @State private var palettes: [Palette] = []
     /// View Properties
+    @State private var palettes: [Palette] = []
     @State private var isStopped: Bool = false
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             Text("Gradient Generator")
                 .font(.largeTitle.bold())
-
+            
             ScrollView(palettes.isEmpty ? .vertical : .horizontal) {
                 HStack(spacing: 12) {
+                    ForEach(palettes) { palette in
+                        VStack(spacing: 4) {
+                            LinearGradient(colors: palette.swiftUIColors, startPoint: .top, endPoint: .bottom)
+                                .clipShape(.circle)
+                        
+                            Text(palette.name)
+                                .font(.caption)
+                                .foregroundStyle(.gray)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .contentShape(.rect)
+                        .onTapGesture {
+                            onTap(palette)
+                        }
+                    }
+                    
                     /// Animated Generating Effect
                     if isGenerating || palettes.isEmpty {
                         VStack(spacing: 6) {
@@ -48,20 +67,26 @@ struct GradientGenerator: View {
                     }
                 }
                 .padding(15)
-                .frame(height: 100)
 
             }
+            .frame(height: 100)
+            .defaultScrollAnchor(.trailing, for: .sizeChanges)
+            .disableWithOpacity(isGenerating)
+
                 
             TextField("Gradient Promt", text: $userPrompt)
                 .padding(.horizontal, 15)
                 .padding(.vertical, 12)
                 .glassEffect()
+                .disableWithOpacity(isGenerating)
+
             
             /// stepper
             Stepper("Generation Limit: **\(generationLimit)**", value: $generationLimit, in: 1...10)
                 .padding(.horizontal, 15)
                 .padding(.vertical, 12)
                 .glassEffect()
+                .disableWithOpacity(isGenerating)
 
             Button {
                 if isGenerating {
@@ -78,15 +103,27 @@ struct GradientGenerator: View {
                     .padding(.vertical, 12)
                     .background(.blue.gradient, in: .capsule)
             }
+            .disableWithOpacity(userPrompt.isEmpty)
+
         }
         .safeAreaPadding(15)
         /// Optional Glass Background
-        .glassEffect(.regular, in: .rect(cornerRadius: 20, style: .continuous))
+        .background(
+            LinearGradient(
+                colors: currentPalette?.swiftUIColors ?? [.white, .gray.opacity(0.1)],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea()
+        )
+//        .glassEffect(.regular, in: .rect(cornerRadius: 20, style: .continuous))
     }
     
     private func generatePalettes() {
         Task {
             do {
+                isGenerating = true
+                
                 let instructions = """
                     Generate a smooth gradient color palette based on the user's prompt. The
                     gradient should transition between two or more colors relevant to
@@ -103,8 +140,6 @@ struct GradientGenerator: View {
                     generating: [Palette].self
                 )
                 
-                print(response)
-
                 for try await partialResult in response {
                     // `partialResult` isinya snapshot: array of `Palette.PartiallyGenerated`
                     let palettes: [Palette] = partialResult.content.compactMap { partial in
@@ -131,7 +166,7 @@ struct GradientGenerator: View {
                     }
                 }
 
-               
+                isGenerating = false
                 
             } catch {
                 print(error.localizedDescription)
@@ -149,5 +184,40 @@ struct Palette: Identifiable {
     var name: String
     @Guide(description: "Hex Color Codes")
     var colors: [String]
+    
+    var swiftUIColors: [Color] {
+        colors.compactMap({ .init(hex: $0) })
+    }
 }
 
+extension View {
+    func disableWithOpacity(_ status: Bool) -> some View {
+        self
+            .disabled(status)
+            .opacity(status ? 0.5 : 1.0)
+    }
+}
+
+/// Hex to SwiftUI Extention
+extension Color {
+    init(hex: String) {
+        let hexSanitized = hex.trimmingCharacters(in: .whitespacesAndNewlines).replacingOccurrences(of: "#", with: "")
+
+        var rgb: UInt64 = 0
+        Scanner(string: hexSanitized).scanHexInt64(&rgb)
+
+        let red = Double((rgb & 0xFF0000) >> 16) / 255.0
+        let green = Double((rgb & 0x00FF00) >> 8) / 255.0
+        let blue = Double(rgb & 0x0000FF) / 255.0
+
+        self.init(red: red, green: green, blue: blue)
+    }
+}
+
+#Preview {
+    if #available(iOS 26.0, *) {
+        ContentGradientGenerator()
+    } else {
+        // Fallback on earlier versions
+    }
+}

@@ -36,7 +36,12 @@ struct InterestingUIApp: App {
 //                .environment(\.isNetworkConnected, networkMonitor.isConnected)
 //                .environment(\.connectionType, networkMonitor.connectionType)
 //            ParallaxCarousel()
-            ContentRestrictedTextField()
+//            ContentRestrictedTextField()
+            if #available(iOS 26.0, *) {
+                ContentGradientGenerator()
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
 }
