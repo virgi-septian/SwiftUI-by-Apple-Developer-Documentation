@@ -15,7 +15,7 @@ struct GradientGenerator: View {
     @State private var isGenerating: Bool = false
     @State private var generationLimit: Int = 3
     @State private var userPrompt: String = ""
-    @State private var palletes: [Palette] = []
+    @State private var palettes: [Palette] = []
     /// View Properties
     @State private var isStopped: Bool = false
     var body: some View {
@@ -23,10 +23,10 @@ struct GradientGenerator: View {
             Text("Gradient Generator")
                 .font(.largeTitle.bold())
 
-            ScrollView(palletes.isEmpty ? .vertical : .horizontal) {
+            ScrollView(palettes.isEmpty ? .vertical : .horizontal) {
                 HStack(spacing: 12) {
                     /// Animated Generating Effect
-                    if isGenerating || palletes.isEmpty {
+                    if isGenerating || palettes.isEmpty {
                         VStack(spacing: 6) {
                             KeyframeAnimator(initialValue: 0.0, trigger: true) { rotation in
                                 Image(systemName: "apple.intelligence")
@@ -38,7 +38,7 @@ struct GradientGenerator: View {
                             }
 
                             
-                            if palletes.isEmpty {
+                            if palettes.isEmpty {
                                 Text("Start Crafting Your Gradient ...")
                                     .font(.caption)
                                     .foregroundStyle(.gray)
@@ -67,6 +67,7 @@ struct GradientGenerator: View {
                 if isGenerating {
                     isStopped = true
                 } else {
+                    isStopped = false
                     generatePalettes()
                 }
             } label: {
@@ -84,14 +85,61 @@ struct GradientGenerator: View {
     }
     
     private func generatePalettes() {
-        
+        Task {
+            do {
+                let instructions = """
+                    Generate a smooth gradient color palette based on the user's prompt. The
+                    gradient should transition between two or more colors relevant to
+                    the theme, mood, or elements described in the prompt. Limit the
+                    result to only \(generationLimit) palettes.
+                """
+
+                let session = LanguageModelSession {
+                    instructions
+                }
+
+                let response = session.streamResponse(
+                    to: userPrompt,
+                    generating: [Palette].self
+                )
+                
+                print(response)
+
+                for try await partialResult in response {
+                    // `partialResult` isinya snapshot: array of `Palette.PartiallyGenerated`
+                    let palettes: [Palette] = partialResult.content.compactMap { partial in
+                        // Akses field optional dari `Palette.PartiallyGenerated`
+                        guard let id = partial.id,
+                              let name = partial.name,
+                              let colors = partial.colors?.compactMap({ $0 }),
+                              colors.count > 2 else {
+                            return nil
+                        }
+                        
+                        return Palette(id: id, name: name, colors: colors)
+                    }
+                    
+                    // Update UI dengan animasi
+                    withAnimation(.snappy(duration: 0.3, extraBounce: 0)) {
+                        self.palettes = palettes
+                    }
+                    
+                    if isStopped {
+                        print("User-Stopped")
+                        isGenerating = false
+                        return
+                    }
+                }
+
+               
+                
+            } catch {
+                print(error.localizedDescription)
+                isGenerating = false
+            }
+        }
     }
 }
-
-//#Preview {
-//    GradientGenerator()
-//        .padding()
-//}
 
 @available(iOS 26.0, *)
 @Generable
@@ -100,5 +148,6 @@ struct Palette: Identifiable {
     @Guide(description: "Gradient Name")
     var name: String
     @Guide(description: "Hex Color Codes")
-    var colors: String
+    var colors: [String]
 }
+
