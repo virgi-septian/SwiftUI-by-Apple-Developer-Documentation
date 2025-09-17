@@ -15,6 +15,7 @@ struct GradientGenerator: View {
     @State private var isGenerating: Bool = false
     @State private var generationLimit: Int = 3
     @State private var userPrompt: String = ""
+    @State private var palletes: [Palette] = []
     /// View Properties
     @State private var isStopped: Bool = false
     var body: some View {
@@ -22,18 +23,68 @@ struct GradientGenerator: View {
             Text("Gradient Generator")
                 .font(.largeTitle.bold())
 
-            ScrollView(.horizontal) {
+            ScrollView(palletes.isEmpty ? .vertical : .horizontal) {
                 HStack(spacing: 12) {
+                    /// Animated Generating Effect
+                    if isGenerating || palletes.isEmpty {
+                        VStack(spacing: 6) {
+                            KeyframeAnimator(initialValue: 0.0, trigger: true) { rotation in
+                                Image(systemName: "apple.intelligence")
+                                    .font(.largeTitle)
+                                    .rotationEffect(.init(degrees: rotation))
+                            } keyframes: { _ in
+                                LinearKeyframe(0, duration: 0)
+                                LinearKeyframe(360, duration: 5)
+                            }
 
+                            
+                            if palletes.isEmpty {
+                                Text("Start Crafting Your Gradient ...")
+                                    .font(.caption)
+                                    .foregroundStyle(.gray)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    }
                 }
                 .padding(15)
                 .frame(height: 100)
 
             }
-            .safeAreaPadding(15)
-            /// Optional Glass Background
-            .glassEffect(.regular, in: .rect(cornerRadius: 20, style: .continuous))
+                
+            TextField("Gradient Promt", text: $userPrompt)
+                .padding(.horizontal, 15)
+                .padding(.vertical, 12)
+                .glassEffect()
+            
+            /// stepper
+            Stepper("Generation Limit: **\(generationLimit)**", value: $generationLimit, in: 1...10)
+                .padding(.horizontal, 15)
+                .padding(.vertical, 12)
+                .glassEffect()
+
+            Button {
+                if isGenerating {
+                    isStopped = true
+                } else {
+                    generatePalettes()
+                }
+            } label: {
+                Text(isGenerating ? "Stop Crafting" : "Craft Gradient")
+                    .contentTransition(.numericText())
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 12)
+                    .background(.blue.gradient, in: .capsule)
+            }
         }
+        .safeAreaPadding(15)
+        /// Optional Glass Background
+        .glassEffect(.regular, in: .rect(cornerRadius: 20, style: .continuous))
+    }
+    
+    private func generatePalettes() {
+        
     }
 }
 
