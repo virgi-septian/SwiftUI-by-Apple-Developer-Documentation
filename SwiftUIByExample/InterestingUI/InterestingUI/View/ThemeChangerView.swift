@@ -31,12 +31,10 @@ struct ThemeChangeView: View {
                 }
                 .padding(.vertical, 10)
                 .padding(.horizontal)
-//                .foregroundStyle(.tint)
                 .onTapGesture {
                     userTheme = theme
                 }
             }
-            .foregroundStyle(.black)
 
             Button {
                 
@@ -77,4 +75,8 @@ enum Theme2: String, CaseIterable {
         case .light: return .light
         }
     }
+}
+
+#Preview {
+    ThemeChanger()
 }

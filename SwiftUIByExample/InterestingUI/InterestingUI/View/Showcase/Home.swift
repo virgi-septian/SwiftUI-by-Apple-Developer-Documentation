@@ -65,7 +65,6 @@ struct Home: View {
             .tabItem {
                 Image(systemName: "macbook.and.iphone")
                 Text("Devices")
-                
             }
             .toolbarBackground(.visible, for: .tabBar)
             .toolbarBackground(.ultraThinMaterial, for: .tabBar)
@@ -107,7 +106,7 @@ struct Home: View {
         })
 
         /// Call this Modifier on the top of the current View, also it must be called once
-        .modifier(ShowCaseRoot(showHighlights: true, onFinished: {
+        .modifier(ShowCaseRoot(showHighlights: true, showingView: true, onFinished: {
             print("Finish Onboarding")
         }))
     }

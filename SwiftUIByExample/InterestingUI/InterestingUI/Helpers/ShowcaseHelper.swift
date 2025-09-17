@@ -23,11 +23,12 @@ extension View {
 /// ShowCase Root View Modifier
 struct ShowCaseRoot: ViewModifier {
     var showHighlights: Bool
+    @State var showingView: Bool
     var onFinished: () -> ()
 
     @State private var highlightOrder: [Int] = []
     @State private var currentHighlight: Int = 0
-    @State private var showingView: Bool = true
+//    @State private var showingView: Bool = false
     /// Popover
     @State private var showTitle: Bool = false
     /// Namespace ID, for smooth shpae transition
@@ -66,6 +67,10 @@ struct ShowCaseRoot: ViewModifier {
                 }
                 .ignoresSafeArea()
                 .onTapGesture {
+//                    print(currentHighlight >= highlightOrder.count - 1)
+//                    print("highlight sekarang: \(currentHighlight)")
+//                    print("proses highlight: \(highlightOrder.count - 1)")
+                    
                     if currentHighlight >= highlightOrder.count - 1 {
                         withAnimation(.easeInOut(duration: 0.25)) {
                             showingView = false
@@ -75,10 +80,14 @@ struct ShowCaseRoot: ViewModifier {
                         withAnimation(.interactiveSpring(response: 0.3, dampingFraction: 0.7, blendDuration: 0.7 )) {
                             showTitle = false
                             currentHighlight += 1
+                            
+                            print("animasi")
                         }
                         
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4 ) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1 ) {
                             showTitle = true
+                            
+                            print("Dispatch")
                         }
                     }
                 }

@@ -12,6 +12,7 @@ struct ThemeChanger: View {
     @State private var changeTheme: Bool = false
     @AppStorage("userTheme") private var userTheme: Theme2 = .systemDefault
     @Environment(\.colorScheme) private var scheme
+    @State private var isShowingPopover = false
     
     var body: some View {
         NavigationStack {
@@ -19,6 +20,17 @@ struct ThemeChanger: View {
                 Section("Appearance") {
                     Button("Change Theme") {
                         changeTheme.toggle()
+                    }
+                    
+                    Button("Show Popover") {
+                        self.isShowingPopover = true
+                    }
+                    .popover(
+                        isPresented: $isShowingPopover, arrowEdge: .leading
+                    ) {
+                        Text("Popover Content")
+                            .presentationCompactAdaptation(.popover)
+                            .padding()
                     }
                 }
             }

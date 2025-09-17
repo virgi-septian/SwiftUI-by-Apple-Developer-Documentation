@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import FoundationModels
+
+@available(iOS 26.0, *)
 
 struct GradientGenerator: View {
     /// Generator Properties
@@ -29,7 +32,7 @@ struct GradientGenerator: View {
             }
             .safeAreaPadding(15)
             /// Optional Glass Background
-//            .glassEffect(.regular, in: .rect(cornerRadius: 20, style: .continuous))
+            .glassEffect(.regular, in: .rect(cornerRadius: 20, style: .continuous))
         }
     }
 }
@@ -38,3 +41,13 @@ struct GradientGenerator: View {
 //    GradientGenerator()
 //        .padding()
 //}
+
+@available(iOS 26.0, *)
+@Generable
+struct Palette: Identifiable {
+    var id: Int
+    @Guide(description: "Gradient Name")
+    var name: String
+    @Guide(description: "Hex Color Codes")
+    var colors: String
+}
