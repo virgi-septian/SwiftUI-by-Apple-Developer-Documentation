@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import AppIntents
 
 @main
 struct InterestingUIApp: App {
+    init() {
+        AppDependencyManager.shared.add {
+            LatteOrderManager()
+        }
+    }
 //    @StateObject private var containerData = ZoomContainerData()
     @StateObject private var networkMonitor = NetworkMonitor()
     var body: some Scene {
@@ -38,7 +44,8 @@ struct InterestingUIApp: App {
 //            ParallaxCarousel()
 //            ContentRestrictedTextField()
             if #available(iOS 26.0, *) {
-                ContentGradientGenerator()
+//                ContentGradientGenerator()
+                InteractiveSnippets()
             } else {
                 // Fallback on earlier versions
             }
