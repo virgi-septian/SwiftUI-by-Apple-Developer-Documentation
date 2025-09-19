@@ -45,7 +45,8 @@ struct InterestingUIApp: App {
 //            ContentRestrictedTextField()
             if #available(iOS 26.0, *) {
 //                ContentGradientGenerator()
-                InteractiveSnippets()
+//                InteractiveSnippets()
+                LiveActivities()
             } else {
                 // Fallback on earlier versions
             }

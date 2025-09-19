@@ -7,18 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7601072E7D5B6D00C52D6A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7601062E7D5B6D00C52D6A /* WidgetKit.framework */; };
+		1A7601092E7D5B6D00C52D6A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7601082E7D5B6D00C52D6A /* SwiftUI.framework */; };
+		1A76011A2E7D5B6F00C52D6A /* CountDownExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A7601042E7D5B6D00C52D6A /* CountDownExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1AF21C662E4484FD00A89C94 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF21C652E4484FD00A89C94 /* SDWebImage */; };
 		1AF21C682E4484FD00A89C94 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF21C672E4484FD00A89C94 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1A7601182E7D5B6F00C52D6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0548802E040AD6006EC6C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A7601032E7D5B6D00C52D6A;
+			remoteInfo = CountDownExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A76011F2E7D5B6F00C52D6A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A76011A2E7D5B6F00C52D6A /* CountDownExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A0548882E040AD6006EC6C9 /* InterestingUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterestingUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7601042E7D5B6D00C52D6A /* CountDownExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CountDownExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7601062E7D5B6D00C52D6A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		1A7601082E7D5B6D00C52D6A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1A7600FC2E7D4EE500C52D6A /* Exceptions for "InterestingUI" folder in "InterestingUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Helpers/Untitled 2.swift",
+				Info.plist,
+			);
+			target = 1A0548872E040AD6006EC6C9 /* InterestingUI */;
+		};
+		1A76011E2E7D5B6F00C52D6A /* Exceptions for "CountDown" folder in "CountDownExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1A7601032E7D5B6D00C52D6A /* CountDownExtension */;
+		};
+		1A7601212E7D5C6900C52D6A /* Exceptions for "InterestingUI" folder in "CountDownExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/CountDownAttribute.swift,
+			);
+			target = 1A7601032E7D5B6D00C52D6A /* CountDownExtension */;
+		};
+		1A9B526D2E7D896000D538CB /* Exceptions for "CountDown" folder in "InterestingUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CountDownLiveActivity.swift,
+			);
+			target = 1A0548872E040AD6006EC6C9 /* InterestingUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1A05488A2E040AD6006EC6C9 /* InterestingUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1A7600FC2E7D4EE500C52D6A /* Exceptions for "InterestingUI" folder in "InterestingUI" target */,
+				1A7601212E7D5C6900C52D6A /* Exceptions for "InterestingUI" folder in "CountDownExtension" target */,
+			);
 			path = InterestingUI;
+			sourceTree = "<group>";
+		};
+		1A76010A2E7D5B6D00C52D6A /* CountDown */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1A9B526D2E7D896000D538CB /* Exceptions for "CountDown" folder in "InterestingUI" target */,
+				1A76011E2E7D5B6F00C52D6A /* Exceptions for "CountDown" folder in "CountDownExtension" target */,
+			);
+			path = CountDown;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +108,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A7601012E7D5B6D00C52D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7601092E7D5B6D00C52D6A /* SwiftUI.framework in Frameworks */,
+				1A7601072E7D5B6D00C52D6A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -40,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				1A05488A2E040AD6006EC6C9 /* InterestingUI */,
+				1A76010A2E7D5B6D00C52D6A /* CountDown */,
+				1A7601052E7D5B6D00C52D6A /* Frameworks */,
 				1A0548892E040AD6006EC6C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,8 +134,18 @@
 			isa = PBXGroup;
 			children = (
 				1A0548882E040AD6006EC6C9 /* InterestingUI.app */,
+				1A7601042E7D5B6D00C52D6A /* CountDownExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A7601052E7D5B6D00C52D6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A7601062E7D5B6D00C52D6A /* WidgetKit.framework */,
+				1A7601082E7D5B6D00C52D6A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,10 +158,12 @@
 				1A0548842E040AD6006EC6C9 /* Sources */,
 				1A0548852E040AD6006EC6C9 /* Frameworks */,
 				1A0548862E040AD6006EC6C9 /* Resources */,
+				1A76011F2E7D5B6F00C52D6A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A7601192E7D5B6F00C52D6A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1A05488A2E040AD6006EC6C9 /* InterestingUI */,
@@ -79,6 +177,28 @@
 			productReference = 1A0548882E040AD6006EC6C9 /* InterestingUI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1A7601032E7D5B6D00C52D6A /* CountDownExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A76011B2E7D5B6F00C52D6A /* Build configuration list for PBXNativeTarget "CountDownExtension" */;
+			buildPhases = (
+				1A7601002E7D5B6D00C52D6A /* Sources */,
+				1A7601012E7D5B6D00C52D6A /* Frameworks */,
+				1A7601022E7D5B6D00C52D6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1A76010A2E7D5B6D00C52D6A /* CountDown */,
+			);
+			name = CountDownExtension;
+			packageProductDependencies = (
+			);
+			productName = CountDownExtension;
+			productReference = 1A7601042E7D5B6D00C52D6A /* CountDownExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -86,11 +206,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					1A0548872E040AD6006EC6C9 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					1A7601032E7D5B6D00C52D6A = {
+						CreatedOnToolsVersion = 26.0;
 					};
 				};
 			};
@@ -112,12 +235,20 @@
 			projectRoot = "";
 			targets = (
 				1A0548872E040AD6006EC6C9 /* InterestingUI */,
+				1A7601032E7D5B6D00C52D6A /* CountDownExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1A0548862E040AD6006EC6C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7601022E7D5B6D00C52D6A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,7 +265,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A7601002E7D5B6D00C52D6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A7601192E7D5B6F00C52D6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A7601032E7D5B6D00C52D6A /* CountDownExtension */;
+			targetProxy = 1A7601182E7D5B6F00C52D6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1A0548942E040AD8006EC6C9 /* Debug */ = {
@@ -267,6 +413,7 @@
 				DEVELOPMENT_TEAM = Q73FTA466A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InterestingUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,6 +445,7 @@
 				DEVELOPMENT_TEAM = Q73FTA466A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InterestingUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +461,68 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.InterestingUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A76011C2E7D5B6F00C52D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q73FTA466A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountDown/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CountDown;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.InterestingUI.CountDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A76011D2E7D5B6F00C52D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q73FTA466A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CountDown/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CountDown;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.versdev.InterestingUI.CountDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,6 +545,15 @@
 			buildConfigurations = (
 				1A0548972E040AD8006EC6C9 /* Debug */,
 				1A0548982E040AD8006EC6C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A76011B2E7D5B6F00C52D6A /* Build configuration list for PBXNativeTarget "CountDownExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A76011C2E7D5B6F00C52D6A /* Debug */,
+				1A76011D2E7D5B6F00C52D6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
