@@ -100,6 +100,7 @@ struct LiveActivities: View {
         let _ = try await AlarmManager.shared.schedule(id: id, configuration: config)
         print("Alarm Set Successfully")
     }
+    
     private func setAlarmWithCountDown() async throws {
         /// Alarm ID
         let id = UUID()
@@ -109,14 +110,6 @@ struct LiveActivities: View {
         
         /// Secondari Alert Button
         let secondaryButton = AlarmButton(text: "Repeat", textColor: .white, systemImageName: "arrow.clockwise")
-        
-        /// Alert
-        let alert = AlarmPresentation.Alert (
-            title: "Time's Up!!!",
-            stopButton: .init(text: "Stop", textColor: .red, systemImageName: "stop.fill"),
-            secondaryButton: secondaryButton,
-            secondaryButtonBehavior: .countdown
-        )
         
         let countDownPresentation = AlarmPresentation.Countdown(
             title: "Coding",
@@ -130,6 +123,14 @@ struct LiveActivities: View {
             resumeButton: .init(
                 text: "Resume", textColor: .white, systemImageName: "play.fill"
             )
+        )
+        
+        /// Alert
+        let alert = AlarmPresentation.Alert (
+            title: "Time's Up!!!",
+            stopButton: .init(text: "Stop", textColor: .red, systemImageName: "stop.fill"),
+            secondaryButton: secondaryButton,
+            secondaryButtonBehavior: .countdown
         )
         
         /// Presentation

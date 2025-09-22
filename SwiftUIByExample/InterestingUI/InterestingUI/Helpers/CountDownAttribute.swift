@@ -10,6 +10,6 @@ import AlarmKit
 
 nonisolated
 struct CountDownAttribute: AlarmMetadata, Hashable, Sendable {
-    
+    /// data custom property here
 }
 

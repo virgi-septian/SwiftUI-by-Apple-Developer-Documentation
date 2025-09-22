@@ -10,13 +10,13 @@ import AppIntents
 
 @main
 struct InterestingUIApp: App {
-    init() {
-        AppDependencyManager.shared.add {
-            LatteOrderManager()
-        }
-    }
+//    init() {
+//        AppDependencyManager.shared.add {
+//            LatteOrderManager()
+//        }
+//    }
 //    @StateObject private var containerData = ZoomContainerData()
-    @StateObject private var networkMonitor = NetworkMonitor()
+//    @StateObject private var networkMonitor = NetworkMonitor()
     var body: some Scene {
         WindowGroup {
             //MARK: - Interisting UI
@@ -47,9 +47,7 @@ struct InterestingUIApp: App {
 //                ContentGradientGenerator()
 //                InteractiveSnippets()
                 LiveActivities()
-            } else {
-                // Fallback on earlier versions
-            }
+            } 
         }
     }
 }

@@ -12,6 +12,7 @@ import AlarmKit
 import AppIntents
 
 
+@available(iOS 26.0, *)
 struct CountDownLiveActivity: Widget {
     /// Number Formatter
     @State private var formatter: DateComponentsFormatter = {
@@ -32,6 +33,7 @@ struct CountDownLiveActivity: Widget {
                         Group {
                             Text(context.attributes.presentation.countdown?.title ?? "")
                                 .font(.title3)
+                            
                             Text(countdown.fireDate, style: .timer)
                                 .font(.title2)
                         }
@@ -58,6 +60,7 @@ struct CountDownLiveActivity: Widget {
                 Spacer(minLength: 0)
                 
                 let alarmID = context.state.alarmID
+                
                 /// Pause and Cancel Buttons!
                 Group {
                     if case .paused = context.state.mode {
@@ -73,9 +76,10 @@ struct CountDownLiveActivity: Widget {
                         .tint(.orange)
                     }
                     
-                    Button(intent: AlarmActionIntent(id: alarmID, isCancel: false)) {
+                    Button(intent: AlarmActionIntent(id: alarmID, isCancel: true)) {
                         Image(systemName: "xmark")
                     }
+
                     .tint(.red)
                 }
                 .buttonStyle(.borderedProminent)
