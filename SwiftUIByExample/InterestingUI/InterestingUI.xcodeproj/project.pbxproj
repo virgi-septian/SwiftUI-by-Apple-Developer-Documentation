@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A52E4412E7EDFFE00A2FF30 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7601062E7D5B6D00C52D6A /* WidgetKit.framework */; };
-		1A52E4422E7EDFFE00A2FF30 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7601082E7D5B6D00C52D6A /* SwiftUI.framework */; };
+		1A0FFB402E823CB10053C600 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7601062E7D5B6D00C52D6A /* WidgetKit.framework */; };
+		1A0FFB412E823CB10053C600 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7601082E7D5B6D00C52D6A /* SwiftUI.framework */; };
+		1A0FFB4E2E823CB40053C600 /* CountDownExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A0FFB3F2E823CB10053C600 /* CountDownExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1AF21C662E4484FD00A89C94 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF21C652E4484FD00A89C94 /* SDWebImage */; };
 		1AF21C682E4484FD00A89C94 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF21C672E4484FD00A89C94 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1A52E44D2E7EE00000A2FF30 /* PBXContainerItemProxy */ = {
+		1A0FFB4C2E823CB40053C600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1A0548802E040AD6006EC6C9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A52E43F2E7EDFFE00A2FF30;
+			remoteGlobalIDString = 1A0FFB3E2E823CB10053C600;
 			remoteInfo = CountDownExtension;
 		};
 /* End PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				1A0FFB4E2E823CB40053C600 /* CountDownExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,33 +40,33 @@
 
 /* Begin PBXFileReference section */
 		1A0548882E040AD6006EC6C9 /* InterestingUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterestingUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A52E4402E7EDFFE00A2FF30 /* CountDownExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CountDownExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0FFB3F2E823CB10053C600 /* CountDownExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CountDownExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7601062E7D5B6D00C52D6A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		1A7601082E7D5B6D00C52D6A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1A52E4522E7EE00000A2FF30 /* Exceptions for "CountDown" folder in "CountDownExtension" target */ = {
+		1A0FFB522E823CB40053C600 /* Exceptions for "CountDown" folder in "CountDownExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 1A52E43F2E7EDFFE00A2FF30 /* CountDownExtension */;
+			target = 1A0FFB3E2E823CB10053C600 /* CountDownExtension */;
 		};
-		1A52E4582E7EE0AB00A2FF30 /* Exceptions for "CountDown" folder in "InterestingUI" target */ = {
+		1A0FFB562E823DAF0053C600 /* Exceptions for "CountDown" folder in "InterestingUI" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				CountDownLiveActivity.swift,
 			);
 			target = 1A0548872E040AD6006EC6C9 /* InterestingUI */;
 		};
-		1A52E45A2E7EE0B500A2FF30 /* Exceptions for "InterestingUI" folder in "CountDownExtension" target */ = {
+		1A0FFB582E823DB80053C600 /* Exceptions for "InterestingUI" folder in "CountDownExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Helpers/CountDownAttribute.swift,
 				Helpers/Intents.swift,
 			);
-			target = 1A52E43F2E7EDFFE00A2FF30 /* CountDownExtension */;
+			target = 1A0FFB3E2E823CB10053C600 /* CountDownExtension */;
 		};
 		1A7600FC2E7D4EE500C52D6A /* Exceptions for "InterestingUI" folder in "InterestingUI" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -81,16 +83,16 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				1A7600FC2E7D4EE500C52D6A /* Exceptions for "InterestingUI" folder in "InterestingUI" target */,
-				1A52E45A2E7EE0B500A2FF30 /* Exceptions for "InterestingUI" folder in "CountDownExtension" target */,
+				1A0FFB582E823DB80053C600 /* Exceptions for "InterestingUI" folder in "CountDownExtension" target */,
 			);
 			path = InterestingUI;
 			sourceTree = "<group>";
 		};
-		1A52E4432E7EDFFE00A2FF30 /* CountDown */ = {
+		1A0FFB422E823CB10053C600 /* CountDown */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1A52E4582E7EE0AB00A2FF30 /* Exceptions for "CountDown" folder in "InterestingUI" target */,
-				1A52E4522E7EE00000A2FF30 /* Exceptions for "CountDown" folder in "CountDownExtension" target */,
+				1A0FFB562E823DAF0053C600 /* Exceptions for "CountDown" folder in "InterestingUI" target */,
+				1A0FFB522E823CB40053C600 /* Exceptions for "CountDown" folder in "CountDownExtension" target */,
 			);
 			path = CountDown;
 			sourceTree = "<group>";
@@ -107,12 +109,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A52E43D2E7EDFFE00A2FF30 /* Frameworks */ = {
+		1A0FFB3C2E823CB10053C600 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A52E4422E7EDFFE00A2FF30 /* SwiftUI.framework in Frameworks */,
-				1A52E4412E7EDFFE00A2FF30 /* WidgetKit.framework in Frameworks */,
+				1A0FFB412E823CB10053C600 /* SwiftUI.framework in Frameworks */,
+				1A0FFB402E823CB10053C600 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				1A05488A2E040AD6006EC6C9 /* InterestingUI */,
-				1A52E4432E7EDFFE00A2FF30 /* CountDown */,
+				1A0FFB422E823CB10053C600 /* CountDown */,
 				1A7601052E7D5B6D00C52D6A /* Frameworks */,
 				1A0548892E040AD6006EC6C9 /* Products */,
 			);
@@ -133,7 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				1A0548882E040AD6006EC6C9 /* InterestingUI.app */,
-				1A52E4402E7EDFFE00A2FF30 /* CountDownExtension.appex */,
+				1A0FFB3F2E823CB10053C600 /* CountDownExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,7 +164,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1A52E44E2E7EE00000A2FF30 /* PBXTargetDependency */,
+				1A0FFB4D2E823CB40053C600 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1A05488A2E040AD6006EC6C9 /* InterestingUI */,
@@ -176,26 +178,26 @@
 			productReference = 1A0548882E040AD6006EC6C9 /* InterestingUI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1A52E43F2E7EDFFE00A2FF30 /* CountDownExtension */ = {
+		1A0FFB3E2E823CB10053C600 /* CountDownExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A52E44F2E7EE00000A2FF30 /* Build configuration list for PBXNativeTarget "CountDownExtension" */;
+			buildConfigurationList = 1A0FFB4F2E823CB40053C600 /* Build configuration list for PBXNativeTarget "CountDownExtension" */;
 			buildPhases = (
-				1A52E43C2E7EDFFE00A2FF30 /* Sources */,
-				1A52E43D2E7EDFFE00A2FF30 /* Frameworks */,
-				1A52E43E2E7EDFFE00A2FF30 /* Resources */,
+				1A0FFB3B2E823CB10053C600 /* Sources */,
+				1A0FFB3C2E823CB10053C600 /* Frameworks */,
+				1A0FFB3D2E823CB10053C600 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1A52E4432E7EDFFE00A2FF30 /* CountDown */,
+				1A0FFB422E823CB10053C600 /* CountDown */,
 			);
 			name = CountDownExtension;
 			packageProductDependencies = (
 			);
 			productName = CountDownExtension;
-			productReference = 1A52E4402E7EDFFE00A2FF30 /* CountDownExtension.appex */;
+			productReference = 1A0FFB3F2E823CB10053C600 /* CountDownExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +213,7 @@
 					1A0548872E040AD6006EC6C9 = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					1A52E43F2E7EDFFE00A2FF30 = {
+					1A0FFB3E2E823CB10053C600 = {
 						CreatedOnToolsVersion = 26.0;
 					};
 				};
@@ -234,7 +236,7 @@
 			projectRoot = "";
 			targets = (
 				1A0548872E040AD6006EC6C9 /* InterestingUI */,
-				1A52E43F2E7EDFFE00A2FF30 /* CountDownExtension */,
+				1A0FFB3E2E823CB10053C600 /* CountDownExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -247,7 +249,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A52E43E2E7EDFFE00A2FF30 /* Resources */ = {
+		1A0FFB3D2E823CB10053C600 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,7 +266,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A52E43C2E7EDFFE00A2FF30 /* Sources */ = {
+		1A0FFB3B2E823CB10053C600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,10 +276,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A52E44E2E7EE00000A2FF30 /* PBXTargetDependency */ = {
+		1A0FFB4D2E823CB40053C600 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A52E43F2E7EDFFE00A2FF30 /* CountDownExtension */;
-			targetProxy = 1A52E44D2E7EE00000A2FF30 /* PBXContainerItemProxy */;
+			target = 1A0FFB3E2E823CB10053C600 /* CountDownExtension */;
+			targetProxy = 1A0FFB4C2E823CB40053C600 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -467,7 +469,7 @@
 			};
 			name = Release;
 		};
-		1A52E4502E7EE00000A2FF30 /* Debug */ = {
+		1A0FFB502E823CB40053C600 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -497,7 +499,7 @@
 			};
 			name = Debug;
 		};
-		1A52E4512E7EE00000A2FF30 /* Release */ = {
+		1A0FFB512E823CB40053C600 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,11 +550,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A52E44F2E7EE00000A2FF30 /* Build configuration list for PBXNativeTarget "CountDownExtension" */ = {
+		1A0FFB4F2E823CB40053C600 /* Build configuration list for PBXNativeTarget "CountDownExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A52E4502E7EE00000A2FF30 /* Debug */,
-				1A52E4512E7EE00000A2FF30 /* Release */,
+				1A0FFB502E823CB40053C600 /* Debug */,
+				1A0FFB512E823CB40053C600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
