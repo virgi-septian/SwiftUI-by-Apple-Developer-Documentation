@@ -46,8 +46,9 @@ struct InterestingUIApp: App {
             if #available(iOS 26.0, *) {
 //                ContentGradientGenerator()
 //                InteractiveSnippets()
-                LiveActivities()
-            } 
+//                LiveActivities()
+                AppleMusicBottomBar()
+            }
         }
     }
 }
