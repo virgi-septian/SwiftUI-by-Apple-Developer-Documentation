@@ -47,9 +47,10 @@ struct InterestingUIApp: App {
 //                ContentGradientGenerator()
 //                InteractiveSnippets()
 //                LiveActivities()
-                MapBottomBar()
+//                MapBottomBar()
+                MorphingMenuInteraction()
             } else {
-                MapBottomBar()
+//                MapBottomBar()
             }
         }
     }
